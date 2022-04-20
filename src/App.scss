@@ -1,0 +1,21 @@
+// .....................Global Settings .............
+* {
+  box-sizing: border-box;
+}
+:root {
+  // default font for rem
+  font-size: 10px;
+  
+  // text color variable
+
+  --text-30: #132130;
+  --text-7a: #eedb7a;
+  --text-58: #ead258;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+// .....................Global Settings .............End
