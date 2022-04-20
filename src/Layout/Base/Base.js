@@ -16,6 +16,7 @@ function Base(props) {
         />
       </div>
       <Header></Header>
+      <main>{props.children}</main>
       <Footer></Footer>
     </div>
   );

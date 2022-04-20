@@ -1,0 +1,122 @@
+#Home {
+  .home_content {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3 {
+      font-size: 2.3rem;
+      color: var(--text-7a);
+      font-family: hubby_bunny;
+    }
+    .social_app {
+      img {
+        display: block;
+        width: 18rem;
+      }
+      a {
+        font-size: 2.4rem;
+        font-family: hubby_bunny;
+        color: var(--text-white);
+      }
+    }
+    .action_controler {
+      a {
+        font-size: 2.4rem;
+      }
+    }
+    .token_controller {
+      text-align: center;
+      a {
+        &:hover {
+          color: var(--text-d9) !important;
+          text-decoration: underline;
+        }
+      }
+    }
+    .scroll-down {
+      margin-top: 10px;
+      bottom: 0;
+      display: block;
+      text-align: center;
+      font-size: 20px;
+      z-index: 100;
+      text-decoration: none;
+      text-shadow: 0;
+      width: 13px;
+      height: 13px;
+      border-bottom: 2px solid #fff;
+      border-right: 2px solid #fff;
+      z-index: 9;
+      transform: translate(-50%) rotate(45deg);
+      animation: fade_move_down 2s ease-in-out infinite;
+      margin-inline: auto;
+    }
+    @keyframes fade_move_down {
+      0% {
+        transform: translateY(-10px) rotate(45deg);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      to {
+        transform: translateY(10px) rotate(45deg);
+        opacity: 0;
+      }
+    }
+  }
+  .monster_box {
+    width: 520px;
+    height: 464px;
+    // border: solid;
+    margin-left: 10%;
+    background: url("../../Static/img/bg-header-info.dd4403f.png") center/100%
+      100% no-repeat;
+    padding: 3.2rem;
+    .box_head {
+      h2,
+      h4,
+      p {
+        color: var(--text-7a);
+      }
+      h2 {
+        font-weight: 700;
+        font-size: 6.4rem;
+      }
+      h4 {
+        font-size: 2.8rem;
+        font-weight: 700;
+      }
+      p {
+        font-size: 1.8rem;
+      }
+    }
+    .box_control {
+      display: flex;
+      justify-content: center;
+      button,
+      a {
+        width: 24rem;
+        height: 9.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        border: none;
+        outline: none;
+        font-weight: bold;
+      }
+      button {
+        background: url("../../Static/img/bg-btn-primary.d539a6a.png")
+          center/100% 100% no-repeat;
+        color: var(--text-black);
+      }
+      a {
+        background: url("../../Static/img/bg-btn-secondary.e56792e.png")
+          center/100% 100% no-repeat;
+        color: var(--text-7a);
+      }
+    }
+  }
+}

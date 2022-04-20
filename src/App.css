@@ -21,6 +21,9 @@
   --text-4d: #e8cf4d;
   --text-21: #021521;
   --text-a7: #5b89a7;
+  --text-67: #184867;
+  --text-48: #113248;
+  --text-d9: #d9d9d9;
 }
 
 html,
@@ -32,8 +35,32 @@ body {
 }
 
 .container {
-  max-width: 1125px;
+  max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.btn_secondary {
+  background: var(--text-7a) !important;
+  color: var(--text-black) !important;
+  font-family: hubby_bunny;
+  padding: 0.375em 0.75em;
+  border-radius: 6px;
+}
+
+.btn_secondary:hover {
+  background: var(--text-58) !important;
+}
+
+.btn_primary {
+  background: var(--text-67) !important;
+  color: var(--text-white) !important;
+  font-family: hubby_bunny;
+  padding: 0.375em 0.75em;
+  border-radius: 6px;
+}
+
+.btn_primary:hover {
+  background: var(--text-48) !important;
 }
 /*# sourceMappingURL=App.css.map */

@@ -51,7 +51,7 @@ function Header(props) {
         {/* Navbar */}
         <nav className="navbar navbar-expand-lg navbar-dark ">
           {/* Container wrapper */}
-          <div className="container">
+          <div className="container-fluid">
             {/* Navbar brand */}
             <a className="navbar-brand me-2" href="https://mdbgo.com/">
               <img

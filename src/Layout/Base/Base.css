@@ -100,4 +100,9 @@
       -ms-user-select: none;
           user-select: none;
 }
+
+#Base main {
+  position: relative;
+  padding-top: 15rem;
+}
 /*# sourceMappingURL=Base.css.map */

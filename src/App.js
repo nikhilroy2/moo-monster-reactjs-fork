@@ -5,7 +5,6 @@ import Home from "./Pages/Home/Home";
 function App() {
   return (
     <div className="App">
-      
       <Base>
         <Home></Home>
       </Base>
