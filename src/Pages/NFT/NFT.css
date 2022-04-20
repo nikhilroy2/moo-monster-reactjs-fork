@@ -18,4 +18,139 @@
   font-weight: 700;
   margin-top: 1rem;
 }
+
+#NFT #BuyEggsContent {
+  background: url("../../Static/img/background.f5406ce.png") center/cover no-repeat;
+  padding: 6.1rem;
+  border: solid;
+}
+
+#NFT #BuyEggsContent .eggs_content_control {
+  display: inline-block;
+}
+
+#NFT #BuyEggsContent .eggs_content_control .content_header {
+  height: 2rem;
+  background: url("../../Static/img/bg-box.711e234.png");
+  width: 100%;
+  background-size: 100% auto;
+}
+
+#NFT #BuyEggsContent .eggs_content_control .content_footer {
+  height: 2.1rem;
+  background: url("../../Static/img/bg-box.711e234.png");
+  width: 100%;
+  background-position-y: 100%;
+  background-size: 100% auto;
+}
+
+#NFT #BuyEggsContent .eggs_content_control .content_body {
+  padding: 2rem 4rem;
+  background: rgba(2, 21, 33, 0.9);
+}
+
+#NFT #BuyEggsContent .eggs_content_control .content_body .eggs_table {
+  border-collapse: separate;
+  border-spacing: 0px;
+}
+
+#NFT #BuyEggsContent .eggs_content_control .content_body .eggs_table td {
+  width: 9rem;
+  height: 9rem;
+  border: 3px solid var(--text-57);
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  cursor: pointer;
+}
+
+#NFT #BuyEggsContent .eggs_content_control .content_body .eggs_table td:first-child {
+  border-left: 3px solid var(--text-57);
+}
+
+#NFT #BuyEggsContent .eggs_content_control .content_body .eggs_table td:hover {
+  border: 3px solid var(--text-7a) !important;
+}
+
+#NFT #BuyEggsContent .eggs_content_control .content_body .eggs_table td img {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+#NFT #BuyEggsContent .eggs_content_control .content_body .eggs_table .last_tr td {
+  border-bottom: 3px solid var(--text-57);
+}
+
+#NFT #BuyEggsContent .eggs_content_control .content_body .buy_eggs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../../Static/img/buy_egg_frame.png") center/100% 100% no-repeat;
+  height: 96px;
+  width: 100%;
+  margin-top: 32px;
+  color: var(--text-7a);
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-size: 3.2rem;
+}
+
+#NFT #BuyEggsContent .eggs_content_control .content_body .buy_eggs:hover {
+  color: var(--text-white);
+}
+
+#NFT #BuyEggsContent .eggs_control_viewer {
+  width: 54rem;
+}
+
+#NFT #BuyEggsContent .eggs_control_viewer .control_view_wrapper .control_header {
+  height: 2rem;
+  background: url("../../Static/img/bg-box.711e234.png");
+  width: 100%;
+  background-size: 100% auto;
+}
+
+#NFT #BuyEggsContent .eggs_control_viewer .control_view_wrapper .control_footer {
+  height: 2.1rem;
+  background: url("../../Static/img/bg-box.711e234.png");
+  width: 100%;
+  background-position-y: 100%;
+  background-size: 100% auto;
+}
+
+#NFT #BuyEggsContent .eggs_control_viewer .control_view_wrapper .control_body {
+  background: rgba(2, 21, 33, 0.9);
+  padding: 4px 24px;
+}
+
+#NFT #BuyEggsContent .eggs_control_viewer .control_view_wrapper .control_body .control_box h2 {
+  font-size: 4rem;
+  color: var(--text-a7);
+  margin-bottom: 0.5rem;
+}
+
+#NFT #BuyEggsContent .eggs_control_viewer .control_play_view_box {
+  position: absolute;
+  right: -160px;
+  bottom: 32px;
+  width: 900px;
+  height: 900px;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#NFT #BuyEggsContent .eggs_control_viewer .control_play_view_box video {
+  width: 100%;
+  height: 100%;
+}
 /*# sourceMappingURL=NFT.css.map */
