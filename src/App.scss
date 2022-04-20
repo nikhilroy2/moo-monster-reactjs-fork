@@ -21,11 +21,14 @@
   --text-58: #ead258;
   --text-af: #93a3af;
   --text-2f: #13212f;
+  --text-4d: #e8cf4d;
+  --text-21: #021521;
 }
 html,
 body {
   margin: 0;
   padding: 0;
   font-size: 16px;
+  background: var(--text-21);
 }
 // .....................Global Settings .............End
