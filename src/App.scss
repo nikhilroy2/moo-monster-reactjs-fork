@@ -1,16 +1,26 @@
 // .....................Global Settings .............
 * {
   box-sizing: border-box;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
 }
+@font-face {
+  font-family: hubby_bunny;
+  src: url("./Static/fonts/HUBBY_BUNNY.otf");
+}
+
 :root {
   // default font for rem
   font-size: 10px;
-  
-  // text color variable
 
+  // text color variable
+  --text-white: #fff;
+  --text-black: #000;
   --text-30: #132130;
   --text-7a: #eedb7a;
   --text-58: #ead258;
+  --text-af: #93a3af;
+  --text-2f: #13212f;
 }
 html,
 body {

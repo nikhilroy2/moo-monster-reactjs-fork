@@ -6,36 +6,43 @@ function Header(props) {
       id: 1,
       name: "Home",
       link: "#",
+      activeClass: "active_nav_action",
     },
     {
       id: 2,
       name: "NFT",
       link: "#",
+      activeClass: "",
     },
     {
       id: 3,
       name: "Gameplay",
       link: "#",
+      activeClass: "",
     },
     {
       id: 4,
       name: "Game mode",
       link: "#",
+      activeClass: "",
     },
     {
       id: 5,
       name: "Tokenomic",
       link: "#",
+      activeClass: "",
     },
     {
       id: 6,
       name: "About us",
       link: "#",
+      activeClass: "",
     },
     {
       id: 7,
       name: "Whitepaper",
       link: "#",
+      activeClass: "",
     },
   ];
   return (
@@ -65,7 +72,7 @@ function Header(props) {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <i className="fas fa-bars" />
+              <i className="fas fa-bars fa-2x" />
             </button>
             {/* Collapsible wrapper */}
             <div
@@ -77,7 +84,10 @@ function Header(props) {
                 {nav_item_list.map((v) => {
                   return (
                     <li className="nav-item" key={v.id}>
-                      <a className="nav-link" href={v.link}>
+                      <a
+                        className={`nav-link nav_action_link ${v.activeClass}`}
+                        href={v.link}
+                      >
                         {v.name}
                       </a>
                     </li>
@@ -86,7 +96,7 @@ function Header(props) {
               </ul>
               {/* Left links */}
               <div className="d-flex align-items-center">
-                <button type="button" className="btn btn-primary me-3">
+                <button type="button" className=" btn_app">
                   Application
                 </button>
               </div>
