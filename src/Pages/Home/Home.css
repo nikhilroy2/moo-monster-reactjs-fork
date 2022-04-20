@@ -1,3 +1,8 @@
+#Home {
+  padding-bottom: 10rem;
+  position: relative;
+}
+
 #Home .home_content {
   height: 100vh;
   display: -webkit-box;
@@ -95,34 +100,40 @@
 }
 
 #Home .monster_box {
+  margin-top: 14rem;
   width: 520px;
-  height: 464px;
+  position: relative;
+  z-index: 10;
   margin-left: 10%;
+}
+
+#Home .monster_box .monster_box_wrapper {
+  height: 420px;
   background: url("../../Static/img/bg-header-info.dd4403f.png") center/100% 100% no-repeat;
   padding: 3.2rem;
 }
 
-#Home .monster_box .box_head h2,
-#Home .monster_box .box_head h4,
-#Home .monster_box .box_head p {
+#Home .monster_box .monster_box_wrapper .box_head h2,
+#Home .monster_box .monster_box_wrapper .box_head h4,
+#Home .monster_box .monster_box_wrapper .box_head p {
   color: var(--text-7a);
 }
 
-#Home .monster_box .box_head h2 {
+#Home .monster_box .monster_box_wrapper .box_head h2 {
   font-weight: 700;
   font-size: 6.4rem;
 }
 
-#Home .monster_box .box_head h4 {
+#Home .monster_box .monster_box_wrapper .box_head h4 {
   font-size: 2.8rem;
   font-weight: 700;
 }
 
-#Home .monster_box .box_head p {
+#Home .monster_box .monster_box_wrapper .box_head p {
   font-size: 1.8rem;
 }
 
-#Home .monster_box .box_control {
+#Home .monster_box .monster_box_wrapper .box_control {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,8 +142,8 @@
           justify-content: center;
 }
 
-#Home .monster_box .box_control button,
-#Home .monster_box .box_control a {
+#Home .monster_box .monster_box_wrapper .box_control button,
+#Home .monster_box .monster_box_wrapper .box_control a {
   width: 24rem;
   height: 9.6rem;
   display: -webkit-box;
@@ -150,13 +161,159 @@
   font-weight: bold;
 }
 
-#Home .monster_box .box_control button {
+#Home .monster_box .monster_box_wrapper .box_control button {
   background: url("../../Static/img/bg-btn-primary.d539a6a.png") center/100% 100% no-repeat;
   color: var(--text-black);
 }
 
-#Home .monster_box .box_control a {
+#Home .monster_box .monster_box_wrapper .box_control a {
   background: url("../../Static/img/bg-btn-secondary.e56792e.png") center/100% 100% no-repeat;
   color: var(--text-7a);
+}
+
+#Home .monster_box .monster_box_footer {
+  height: 125px;
+  background: url("../../Static/img/bg-header-social.43a4b35.png") center/100% 100% no-repeat;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+#Home .monster_box .monster_box_footer a {
+  color: var(--text-7a);
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.3rem;
+}
+
+#Home .main_graphic {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#Home .main_graphic .bg-parallax {
+  background-image: url("../../Static/img/bg-parallax.28de0d4.png");
+  position: absolute;
+  z-index: -5;
+  height: 100%;
+  width: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  overflow: visible;
+}
+
+#Home .main_graphic .mills {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  background-size: 100% auto;
+  -webkit-animation: moveDown 1s ease 0s 1 normal forwards;
+          animation: moveDown 1s ease 0s 1 normal forwards;
+}
+
+#Home .main_graphic .jump {
+  background-image: url("../../Static/img/jump.b0968d2.png");
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  background-size: 100% auto;
+  -webkit-animation: moveDown 1s ease 0s 1 normal forwards;
+          animation: moveDown 1s ease 0s 1 normal forwards;
+}
+
+#Home .main_graphic .smoke {
+  background-image: url("../../Static/img/smoke.6677805.png");
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  background-size: 100% auto;
+  -webkit-animation: moveDown 1s ease 0s 1 normal forwards;
+          animation: moveDown 1s ease 0s 1 normal forwards;
+}
+
+#Home .main_graphic .richie {
+  background-image: url("../../Static/img/richie.40c93ba.png");
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  background-size: 100% auto;
+  -webkit-animation: moveDown 1s ease 0s 1 normal forwards;
+          animation: moveDown 1s ease 0s 1 normal forwards;
+}
+
+#Home .main_graphic .bolt {
+  background-image: url("../../Static/img/bolt.f04d270.png");
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  background-size: 100% auto;
+  -webkit-animation: moveDown 1s ease 0s 1 normal forwards;
+  animation: moveDown 1s ease 0s 1 normal forwards;
+}
+
+#Home .main_graphic .ground {
+  background-image: url("../../Static/img/ground-front.89b4f16.png");
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  background-size: 100% auto;
+  -webkit-animation: moveDown 1s ease 0s 1 normal forwards;
+          animation: moveDown 1s ease 0s 1 normal forwards;
 }
 /*# sourceMappingURL=Home.css.map */

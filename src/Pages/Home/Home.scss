@@ -1,4 +1,6 @@
 #Home {
+  padding-bottom: 10rem;
+  position: relative;
   .home_content {
     height: 100vh;
     display: flex;
@@ -67,56 +69,185 @@
     }
   }
   .monster_box {
+    margin-top: 14rem;
     width: 520px;
-    height: 464px;
+    position: relative;
+    z-index: 10;
     // border: solid;
     margin-left: 10%;
-    background: url("../../Static/img/bg-header-info.dd4403f.png") center/100%
-      100% no-repeat;
-    padding: 3.2rem;
-    .box_head {
-      h2,
-      h4,
-      p {
-        color: var(--text-7a);
+    .monster_box_wrapper {
+      height: 420px;
+      background: url("../../Static/img/bg-header-info.dd4403f.png") center/100%
+        100% no-repeat;
+      padding: 3.2rem;
+      .box_head {
+        h2,
+        h4,
+        p {
+          color: var(--text-7a);
+        }
+        h2 {
+          font-weight: 700;
+          font-size: 6.4rem;
+        }
+        h4 {
+          font-size: 2.8rem;
+          font-weight: 700;
+        }
+        p {
+          font-size: 1.8rem;
+        }
       }
-      h2 {
-        font-weight: 700;
-        font-size: 6.4rem;
-      }
-      h4 {
-        font-size: 2.8rem;
-        font-weight: 700;
-      }
-      p {
-        font-size: 1.8rem;
-      }
-    }
-    .box_control {
-      display: flex;
-      justify-content: center;
-      button,
-      a {
-        width: 24rem;
-        height: 9.6rem;
+      .box_control {
         display: flex;
         justify-content: center;
-        align-items: center;
-        font-size: 2.5rem;
-        border: none;
-        outline: none;
-        font-weight: bold;
+        button,
+        a {
+          width: 24rem;
+          height: 9.6rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 2.5rem;
+          border: none;
+          outline: none;
+          font-weight: bold;
+        }
+        button {
+          background: url("../../Static/img/bg-btn-primary.d539a6a.png")
+            center/100% 100% no-repeat;
+          color: var(--text-black);
+        }
+        a {
+          background: url("../../Static/img/bg-btn-secondary.e56792e.png")
+            center/100% 100% no-repeat;
+          color: var(--text-7a);
+        }
       }
-      button {
-        background: url("../../Static/img/bg-btn-primary.d539a6a.png")
-          center/100% 100% no-repeat;
-        color: var(--text-black);
-      }
+    }
+    .monster_box_footer {
+      height: 125px;
+      background: url("../../Static/img/bg-header-social.43a4b35.png")
+        center/100% 100% no-repeat;
+      width: 100%;
+      margin-top: 4rem;
       a {
-        background: url("../../Static/img/bg-btn-secondary.e56792e.png")
-          center/100% 100% no-repeat;
         color: var(--text-7a);
+        text-decoration: none;
+        display: inline-block;
+        padding: 1.3rem;
       }
+    }
+  }
+  .main_graphic {
+    pointer-events: none;
+    user-select: none;
+    .bg-parallax{
+      background-image: url('../../Static/img/bg-parallax.28de0d4.png');
+      position: absolute;
+    z-index: -5;
+    // opacity: 1%;
+    height: 100%;
+    width: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    overflow: visible;
+    }
+    .mills {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      // opacity: 0;
+      animation-fill-mode: forwards;
+      background-size: 100% auto;
+      animation: moveDown 1s ease 0s 1 normal forwards;
+    }
+    .jump {
+      background-image: url("../../Static/img/jump.b0968d2.png");
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      // opacity: 0;
+      animation-fill-mode: forwards;
+      background-size: 100% auto;
+      animation: moveDown 1s ease 0s 1 normal forwards;
+    }
+    .smoke {
+      background-image: url("../../Static/img/smoke.6677805.png");
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      // opacity: 0;
+      animation-fill-mode: forwards;
+      background-size: 100% auto;
+      animation: moveDown 1s ease 0s 1 normal forwards;
+    }
+    .richie {
+      background-image: url("../../Static/img/richie.40c93ba.png");
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      // opacity: 0;
+      animation-fill-mode: forwards;
+      background-size: 100% auto;
+      animation: moveDown 1s ease 0s 1 normal forwards;
+    }
+    .bolt {
+      background-image: url("../../Static/img/bolt.f04d270.png");
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      // opacity: 0;
+      animation-fill-mode: forwards;
+      background-size: 100% auto;
+      -webkit-animation: moveDown 1s ease 0s 1 normal forwards;
+      animation: moveDown 1s ease 0s 1 normal forwards;
+    }
+    .ground {
+      background-image: url("../../Static/img/ground-front.89b4f16.png");
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      // opacity: 0;
+      animation-fill-mode: forwards;
+      background-size: 100% auto;
+      animation: moveDown 1s ease 0s 1 normal forwards;
     }
   }
 }
