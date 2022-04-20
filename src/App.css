@@ -40,6 +40,25 @@ body {
   margin-right: auto;
 }
 
+section .section_title {
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(25%, #eedb7a), color-stop(75%, #eedb7a), to(transparent));
+  background: linear-gradient(90deg, transparent 0, #eedb7a 25%, #eedb7a 75%, transparent);
+  color: var(--text-21);
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+section .section_title.mt_section {
+  margin-top: 10rem;
+}
+
+section .section_body {
+  padding-top: 3rem;
+  padding-bottom: 7rem;
+}
+
 .btn_secondary {
   background: var(--text-7a) !important;
   color: var(--text-black) !important;
@@ -62,5 +81,9 @@ body {
 
 .btn_primary:hover {
   background: var(--text-48) !important;
+}
+
+.text_secondary {
+  color: var(--text-7a);
 }
 /*# sourceMappingURL=App.css.map */

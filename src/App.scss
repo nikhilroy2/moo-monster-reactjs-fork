@@ -43,6 +43,29 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+section {
+  .section_title {
+    text-align: center;
+    background: linear-gradient(
+      90deg,
+      transparent 0,
+      #eedb7a 25%,
+      #eedb7a 75%,
+      transparent
+    );
+    color: var(--text-21);
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    &.mt_section {
+      margin-top: 10rem;
+    }
+  }
+  .section_body {
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+  }
+}
 // ...................Section Styles .................End
 
 // ...............custom button ................
@@ -68,3 +91,9 @@ body {
   }
 }
 // ...............custom button ................End
+
+// custom text color style.........
+.text_secondary {
+  color: var(--text-7a);
+}
+// custom text color style.........End
