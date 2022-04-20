@@ -23,6 +23,7 @@
   --text-2f: #13212f;
   --text-4d: #e8cf4d;
   --text-21: #021521;
+  --text-a7: #5b89a7;
 }
 html,
 body {
@@ -32,3 +33,11 @@ body {
   background: var(--text-21);
 }
 // .....................Global Settings .............End
+
+// ...................Section Styles .................
+.container {
+  max-width: 1125px;
+  margin-left: auto;
+  margin-right: auto;
+}
+// ...................Section Styles .................End

@@ -20,6 +20,7 @@
   --text-2f: #13212f;
   --text-4d: #e8cf4d;
   --text-21: #021521;
+  --text-a7: #5b89a7;
 }
 
 html,
@@ -28,5 +29,11 @@ body {
   padding: 0;
   font-size: 16px;
   background: var(--text-21);
+}
+
+.container {
+  max-width: 1125px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*# sourceMappingURL=App.css.map */
