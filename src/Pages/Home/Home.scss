@@ -155,6 +155,11 @@
   .main_graphic {
     pointer-events: none;
     user-select: none;
+    &.graphic_play {
+      & > * {
+        animation: moveDown 1s ease 0s 1 normal forwards;
+      }
+    }
     .bg-parallax {
       background-image: url("../../Static/img/bg-parallax.28de0d4.png");
       position: absolute;
@@ -168,8 +173,10 @@
     }
     .mills {
       position: absolute;
-      bottom: 0;
+      bottom: -300px;
       left: 50%;
+      opacity: 0;
+      animation-delay: var(--delay);
       transform: translateX(-50%);
       width: 100%;
       height: 100%;
@@ -179,13 +186,14 @@
       // opacity: 0;
       animation-fill-mode: forwards;
       background-size: 100% auto;
-      animation: moveDown 1s ease 0s 1 normal forwards;
     }
     .jump {
       background-image: url("../../Static/img/jump.b0968d2.png");
       position: absolute;
-      bottom: 0;
+      bottom: -300px;
       left: 50%;
+      opacity: 0;
+      animation-delay: var(--delay);
       transform: translateX(-50%);
       width: 100%;
       height: 100%;
@@ -195,13 +203,14 @@
       // opacity: 0;
       animation-fill-mode: forwards;
       background-size: 100% auto;
-      animation: moveDown 1s ease 0s 1 normal forwards;
     }
     .smoke {
       background-image: url("../../Static/img/smoke.6677805.png");
       position: absolute;
-      bottom: 0;
+      bottom: -300px;
       left: 50%;
+      opacity: 0;
+      animation-delay: var(--delay);
       transform: translateX(-50%);
       width: 100%;
       height: 100%;
@@ -211,13 +220,14 @@
       // opacity: 0;
       animation-fill-mode: forwards;
       background-size: 100% auto;
-      animation: moveDown 1s ease 0s 1 normal forwards;
     }
     .richie {
       background-image: url("../../Static/img/richie.40c93ba.png");
       position: absolute;
-      bottom: 0;
+      bottom: -300px;
       left: 50%;
+      opacity: 0;
+      animation-delay: var(--delay);
       transform: translateX(-50%);
       width: 100%;
       height: 100%;
@@ -227,13 +237,14 @@
       // opacity: 0;
       animation-fill-mode: forwards;
       background-size: 100% auto;
-      animation: moveDown 1s ease 0s 1 normal forwards;
     }
     .bolt {
       background-image: url("../../Static/img/bolt.f04d270.png");
       position: absolute;
-      bottom: 0;
+      bottom: -300px;
       left: 50%;
+      opacity: 0;
+      animation-delay: var(--delay);
       transform: translateX(-50%);
       width: 100%;
       height: 100%;
@@ -243,14 +254,14 @@
       // opacity: 0;
       animation-fill-mode: forwards;
       background-size: 100% auto;
-      -webkit-animation: moveDown 1s ease 0s 1 normal forwards;
-      animation: moveDown 1s ease 0s 1 normal forwards;
     }
     .ground {
       background-image: url("../../Static/img/ground-front.89b4f16.png");
       position: absolute;
-      bottom: 0;
+      bottom: -300px;
       left: 50%;
+      opacity: 0;
+      animation-delay: var(--delay);
       transform: translateX(-50%);
       width: 100%;
       height: 100%;
@@ -260,7 +271,16 @@
       // opacity: 0;
       animation-fill-mode: forwards;
       background-size: 100% auto;
-      animation: moveDown 1s ease 0s 1 normal forwards;
+    }
+    @keyframes moveDown {
+      0% {
+        bottom: -300px;
+        opacity: 0;
+      }
+      100% {
+        bottom: 0px;
+        opacity: 1;
+      }
     }
   }
 }

@@ -211,6 +211,11 @@
           user-select: none;
 }
 
+#Home .main_graphic.graphic_play > * {
+  -webkit-animation: moveDown 1s ease 0s 1 normal forwards;
+          animation: moveDown 1s ease 0s 1 normal forwards;
+}
+
 #Home .main_graphic .bg-parallax {
   background-image: url("../../Static/img/bg-parallax.28de0d4.png");
   position: absolute;
@@ -224,8 +229,11 @@
 
 #Home .main_graphic .mills {
   position: absolute;
-  bottom: 0;
+  bottom: -300px;
   left: 50%;
+  opacity: 0;
+  -webkit-animation-delay: var(--delay);
+          animation-delay: var(--delay);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 100%;
@@ -236,15 +244,16 @@
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   background-size: 100% auto;
-  -webkit-animation: moveDown 1s ease 0s 1 normal forwards;
-          animation: moveDown 1s ease 0s 1 normal forwards;
 }
 
 #Home .main_graphic .jump {
   background-image: url("../../Static/img/jump.b0968d2.png");
   position: absolute;
-  bottom: 0;
+  bottom: -300px;
   left: 50%;
+  opacity: 0;
+  -webkit-animation-delay: var(--delay);
+          animation-delay: var(--delay);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 100%;
@@ -255,15 +264,16 @@
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   background-size: 100% auto;
-  -webkit-animation: moveDown 1s ease 0s 1 normal forwards;
-          animation: moveDown 1s ease 0s 1 normal forwards;
 }
 
 #Home .main_graphic .smoke {
   background-image: url("../../Static/img/smoke.6677805.png");
   position: absolute;
-  bottom: 0;
+  bottom: -300px;
   left: 50%;
+  opacity: 0;
+  -webkit-animation-delay: var(--delay);
+          animation-delay: var(--delay);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 100%;
@@ -274,15 +284,16 @@
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   background-size: 100% auto;
-  -webkit-animation: moveDown 1s ease 0s 1 normal forwards;
-          animation: moveDown 1s ease 0s 1 normal forwards;
 }
 
 #Home .main_graphic .richie {
   background-image: url("../../Static/img/richie.40c93ba.png");
   position: absolute;
-  bottom: 0;
+  bottom: -300px;
   left: 50%;
+  opacity: 0;
+  -webkit-animation-delay: var(--delay);
+          animation-delay: var(--delay);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 100%;
@@ -293,15 +304,16 @@
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   background-size: 100% auto;
-  -webkit-animation: moveDown 1s ease 0s 1 normal forwards;
-          animation: moveDown 1s ease 0s 1 normal forwards;
 }
 
 #Home .main_graphic .bolt {
   background-image: url("../../Static/img/bolt.f04d270.png");
   position: absolute;
-  bottom: 0;
+  bottom: -300px;
   left: 50%;
+  opacity: 0;
+  -webkit-animation-delay: var(--delay);
+          animation-delay: var(--delay);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 100%;
@@ -312,15 +324,16 @@
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   background-size: 100% auto;
-  -webkit-animation: moveDown 1s ease 0s 1 normal forwards;
-  animation: moveDown 1s ease 0s 1 normal forwards;
 }
 
 #Home .main_graphic .ground {
   background-image: url("../../Static/img/ground-front.89b4f16.png");
   position: absolute;
-  bottom: 0;
+  bottom: -300px;
   left: 50%;
+  opacity: 0;
+  -webkit-animation-delay: var(--delay);
+          animation-delay: var(--delay);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 100%;
@@ -331,7 +344,27 @@
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   background-size: 100% auto;
-  -webkit-animation: moveDown 1s ease 0s 1 normal forwards;
-          animation: moveDown 1s ease 0s 1 normal forwards;
+}
+
+@-webkit-keyframes moveDown {
+  0% {
+    bottom: -300px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    bottom: -300px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0px;
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=Home.css.map */

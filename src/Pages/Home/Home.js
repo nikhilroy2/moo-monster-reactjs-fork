@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.css";
 function Home(props) {
   const social_list_monster_box = [
@@ -149,18 +149,30 @@ function Home(props) {
           </div>
         </div>
       </div>
-
-      <div className="main_graphic">
-        <div className="bg-parallax"></div>
-        <div className="mills"></div>
-        <div className="jump"></div>
-        <div className="smoke"></div>
-        <div className="richie"></div>
-        <div className="bolt"></div>
-        <div className="ground"></div>
-      </div>
+      <MainGraphic></MainGraphic>
     </div>
   );
 }
 
 export default Home;
+
+const MainGraphic = () => {
+  const [IsAnimation, setIsAnimation] = useState(false);
+  window.addEventListener("scroll", (e) => {
+    console.log(document.documentElement.scrollTop);
+    document.documentElement.scrollTop >= 150
+      ? setIsAnimation(true)
+      : setIsAnimation(false);
+  });
+  return (
+    <div className={`main_graphic ${IsAnimation ? "graphic_play" : ""}`}>
+      <div style={{ "--delay": "0s" }} className="bg-parallax"></div>
+      <div style={{ "--delay": ".2s" }} className="mills"></div>
+      <div style={{ "--delay": ".4s" }} className="jump"></div>
+      <div style={{ "--delay": ".6s" }} className="smoke"></div>
+      <div style={{ "--delay": ".8s" }} className="richie"></div>
+      <div style={{ "--delay": "1s" }} className="bolt"></div>
+      <div style={{ "--delay": "1.2s" }} className="ground"></div>
+    </div>
+  );
+};
