@@ -93,7 +93,7 @@ function Home(props) {
                     </a>
                   </div>
                 </div>
-                <div class="scroll-down"></div>
+                <div className="scroll-down"></div>
               </div>
             </div>
           </div>
