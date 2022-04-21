@@ -1,8 +1,12 @@
 #Footer {
   z-index: 100;
   position: relative;
+}
+
+#Footer .footer_top_content {
   border-top: 3px solid var(--text-7a);
   padding-top: 3rem;
+  background: #132130;
 }
 
 #Footer * {
