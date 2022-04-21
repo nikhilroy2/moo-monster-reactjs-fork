@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./NFT.css";
 
+import ContentSectionBox from "../../Components/ContentSectionBox/ContentSectionBox";
+
 function NFT(props) {
   const nft_trading_object = [
     {
@@ -550,27 +552,13 @@ const BuyEggsContent = () => {
 const LandNFT = () => {
   return (
     <div id="LandNFT">
-      <div className="container">
-        <div className="row align-items-end align-items-md-center">
-          <div className="text-center col-md-6">
-            <div className="col_wrapper nft_img_land_wrapper">
-              <img
-                src={require("../../Static/img/land.825aa85.png")}
-                alt="img"
-              />
-            </div>
-          </div>
-          <div className="text-center text-md-start col-md-6">
-            <h3 className="text_secondary font-weight-bolder font_4">
-              Land NFT
-            </h3>
-            <p className="text-white">
-              Occupy and own land in each of the Mooniverse Cities to receive
-              great benefits.
-            </p>
-          </div>
-        </div>
-      </div>
+      <ContentSectionBox
+        boxImg={require("../../Static/img/land.825aa85.png")}
+        boxTitle="Land NFT"
+        boxDescription="Occupy and own land in each of the Mooniverse Cities to receive
+        great benefits."
+        isLeftBox={true}
+      ></ContentSectionBox>
     </div>
   );
 };
@@ -578,28 +566,13 @@ const LandNFT = () => {
 const MetaVerseFashion = () => {
   return (
     <div id="MetaVerseFashion">
-      <div className="container">
-        <div className="row align-items-end align-items-md-center">
-          <div className="text-center text-md-start col-md-6">
-            <h3 className="text_secondary font-weight-bolder font_4">
-              Metaverse Fashion
-            </h3>
-            <p className="text-white">
-              Choose the style that’s right for you. To walk in this Metaverse
-              world (This world is not only for pigs!)
-            </p>
-          </div>
-
-          <div className="text-center col-md-6">
-            <div className="col_wrapper nft_img_land_wrapper">
-              <img
-                src={require("../../Static/img/metaverse-fashion.8fab8bc.png")}
-                alt="img"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+      <ContentSectionBox
+        boxImg={require("../../Static/img/metaverse-fashion.8fab8bc.png")}
+        boxTitle="Metaverse Fashion"
+        boxDescription="Choose the style that’s right for you. To walk in this Metaverse
+        world (This world is not only for pigs!)"
+        isLeftBox={false}
+      ></ContentSectionBox>
     </div>
   );
 };
@@ -607,31 +580,13 @@ const MetaVerseFashion = () => {
 const HumanEquipment = () => {
   return (
     <div id="HumanEquipment">
-      <div className="container">
-        <div className="row align-items-end align-items-md-center">
-          <div className="text-center col-md-6">
-            <div className="col_wrapper nft_img_land_wrapper">
-              <img
-                style={{ objectFit: "cover" }}
-                src={require("../../Static/img/human-equipment.dffdcf2.png")}
-                alt="img"
-              />
-            </div>
-          </div>
-          <div
-            className="text-center text-md-start col-md-6"
-            style={{ zIndex: 2 }}
-          >
-            <h3 className="text_secondary font-weight-bolder font_4">
-              Human Equipment
-            </h3>
-            <p className="text-white">
-              Wear various equipment to strengthen your character and fight more
-              powerful opponents
-            </p>
-          </div>
-        </div>
-      </div>
+      <ContentSectionBox
+        boxImg={require("../../Static/img/human-equipment.dffdcf2.png")}
+        boxTitle="Human Equipment"
+        boxDescription="Wear various equipment to strengthen your character and fight more
+        powerful opponents"
+        isLeftBox={true}
+      ></ContentSectionBox>
     </div>
   );
 };

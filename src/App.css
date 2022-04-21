@@ -48,7 +48,6 @@ section .section_title {
   color: var(--text-21);
   font-size: 4rem;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 section .section_title.mt_section {

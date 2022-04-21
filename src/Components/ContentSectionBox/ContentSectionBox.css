@@ -1,0 +1,57 @@
+#ContentSectionBox {
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#13212f));
+  background: linear-gradient(90deg, transparent, #13212f);
+  margin-top: 7rem;
+  position: relative;
+  margin-bottom: 7rem;
+}
+
+#ContentSectionBox::before {
+  content: "";
+  -o-border-image: linear-gradient(90deg, transparent, #eedb7a 75%) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(75%, #eedb7a)) 1;
+     border-image: linear-gradient(90deg, transparent, #eedb7a 75%) 1;
+  position: absolute;
+  display: block;
+  width: 85%;
+  border-top: 0;
+  border-style: solid;
+  right: 0px;
+}
+
+#ContentSectionBox::after {
+  content: "";
+  -o-border-image: linear-gradient(90deg, transparent, #eedb7a 75%) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(75%, #eedb7a)) 1;
+     border-image: linear-gradient(90deg, transparent, #eedb7a 75%) 1;
+  position: absolute;
+  display: block;
+  width: 85%;
+  border-top: 0;
+  border-style: solid;
+  right: 0px;
+  bottom: 0px;
+}
+
+#ContentSectionBox .content_box_img {
+  min-height: 45rem;
+  position: relative;
+}
+
+#ContentSectionBox .content_box_img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+#ContentSectionBox.right_box::before, #ContentSectionBox.right_box::after {
+  right: auto;
+  left: 0px;
+  -o-border-image: linear-gradient(270deg, transparent, #eedb7a 75%) 1;
+     border-image: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(75%, #eedb7a)) 1;
+     border-image: linear-gradient(270deg, transparent, #eedb7a 75%) 1;
+}
+/*# sourceMappingURL=ContentSectionBox.css.map */

@@ -1,0 +1,24 @@
+#Gameplay {
+  .video_gameplay_box {
+    position: relative;
+    video,
+    img {
+      width: 100%;
+    }
+    img{
+        z-index: 2;
+        position: relative;
+    }
+    video {
+      position: absolute;
+      top: 2.65%;
+      width: 99%;
+      display: block;
+      border: solid;
+      left: 50%;
+      transform: translateX(-50%);
+      border: none;
+      
+    }
+  }
+}
