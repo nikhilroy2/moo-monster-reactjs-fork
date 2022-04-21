@@ -87,4 +87,8 @@ section .section_body {
 .text_secondary {
   color: var(--text-7a);
 }
+
+.font_4 {
+  font-size: 4rem;
+}
 /*# sourceMappingURL=App.css.map */

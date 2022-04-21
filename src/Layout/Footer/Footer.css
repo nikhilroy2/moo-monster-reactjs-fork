@@ -1,6 +1,8 @@
 #Footer {
   z-index: 100;
   position: relative;
+  border-top: 3px solid var(--text-7a);
+  padding-top: 3rem;
 }
 
 #Footer * {

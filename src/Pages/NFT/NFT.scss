@@ -133,4 +133,52 @@
       }
     }
   }
+
+  #LandNFT,
+  #MetaVerseFashion,
+  #HumanEquipment {
+    background: linear-gradient(90deg, transparent, #13212f);
+    margin-top: 7rem;
+    position: relative;
+    margin-bottom: 7rem;
+    &::before {
+      content: "";
+      border-image: linear-gradient(90deg, transparent, #eedb7a 75%) 1;
+      position: absolute;
+      display: block;
+      width: 85%;
+      border-top: 0;
+      border-style: solid;
+      right: 0px;
+    }
+    &::after {
+      content: "";
+      border-image: linear-gradient(90deg, transparent, #eedb7a 75%) 1;
+      position: absolute;
+      display: block;
+      width: 85%;
+      border-top: 0;
+      border-style: solid;
+      right: 0px;
+      bottom: 0px;
+    }
+    .nft_img_land_wrapper {
+      min-height: 45rem;
+      position: relative;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  #MetaVerseFashion {
+    &::before,
+    &::after {
+      right: auto;
+      left: 0px;
+      border-image: linear-gradient(270deg, transparent, #eedb7a 75%) 1;
+    }
+  }
 }
