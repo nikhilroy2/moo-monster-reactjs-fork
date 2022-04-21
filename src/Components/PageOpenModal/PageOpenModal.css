@@ -1,0 +1,69 @@
+#PageOpenModal .modal-content {
+  background: var(--text-2f) !important;
+  color: white;
+}
+
+#PageOpenModal .modal-content .modal-body,
+#PageOpenModal .modal-content .modal-footer {
+  border: none;
+}
+
+#PageOpenModal .modal-content .modal-footer .btn_control a {
+  font-size: 1.6rem;
+  padding: 0.375em 0.75em;
+  text-transform: capitalize;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+#PageOpenModal .btn-close {
+  font-size: 2.4rem;
+  background: transparent;
+  color: white !important;
+  font-weight: bold;
+}
+
+#PageOpenModal .btn-close:hover {
+  opacity: 0.75;
+}
+
+#PageOpenModal .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+#PageOpenModal .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#PageOpenModal .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#PageOpenModal .swiper-pagination-bullet {
+  width: 30px;
+  height: 3px;
+  border-radius: 0px;
+  background: #fff;
+  opacity: 0.5;
+}
+
+#PageOpenModal .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+/*# sourceMappingURL=PageOpenModal.css.map */

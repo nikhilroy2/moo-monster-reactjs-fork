@@ -2,6 +2,8 @@ import React from "react";
 import "./Base.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+
+import PageOpenModal from "../../Components/PageOpenModal/PageOpenModal";
 function Base(props) {
   return (
     <div id="Base">
@@ -18,6 +20,8 @@ function Base(props) {
       <Header></Header>
       <main>{props.children}</main>
       <Footer></Footer>
+
+      <PageOpenModal></PageOpenModal>
     </div>
   );
 }
