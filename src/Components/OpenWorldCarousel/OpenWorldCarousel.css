@@ -1,0 +1,154 @@
+#OpenWorldCarousel {
+  position: relative;
+}
+
+#OpenWorldCarousel::before {
+  content: "";
+  -o-border-image: linear-gradient(90deg, transparent, #eedb7a 75%) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(75%, #eedb7a)) 1;
+     border-image: linear-gradient(90deg, transparent, #eedb7a 75%) 1;
+  position: absolute;
+  display: block;
+  width: 85%;
+  border-top: 0;
+  border-style: solid;
+  right: 0px;
+  top: -5%;
+}
+
+#OpenWorldCarousel::after {
+  content: "";
+  -o-border-image: linear-gradient(90deg, transparent, #eedb7a 75%) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(75%, #eedb7a)) 1;
+     border-image: linear-gradient(90deg, transparent, #eedb7a 75%) 1;
+  position: absolute;
+  display: block;
+  width: 85%;
+  border-top: 0;
+  border-style: solid;
+  right: 0px;
+  bottom: -5%;
+}
+
+#OpenWorldCarousel .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+#OpenWorldCarousel .swiper_fixed_content {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 520px;
+}
+
+#OpenWorldCarousel .swiper_fixed_content h2 {
+  font-size: 4rem;
+  color: var(--text-7a);
+  font-weight: bold;
+}
+
+#OpenWorldCarousel .swiper-slide {
+  color: var(--text-white);
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#OpenWorldCarousel .slideImg {
+  width: 427px;
+  height: 464px;
+}
+
+#OpenWorldCarousel .swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#OpenWorldCarousel .swiper .swiper_description {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  font-size: 3.2rem;
+  width: 44%;
+  text-align: center;
+}
+
+#OpenWorldCarousel .swiper-pagination {
+  text-align: right;
+  pointer-events: none;
+  padding-right: 30px;
+}
+
+#OpenWorldCarousel .swiper-pagination-bullet {
+  pointer-events: visible;
+  background-color: var(--text-57);
+  width: 2.5vmax;
+  height: 0.1875em;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+  opacity: 1;
+  border-radius: 0px;
+}
+
+#OpenWorldCarousel .swiper-pagination-bullet:hover {
+  background: var(--text-7a);
+}
+
+#OpenWorldCarousel .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--text-7a);
+  height: 0.375em;
+  margin-top: 0.1875em;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+}
+
+#OpenWorldCarousel .swiper-button-prev {
+  left: auto;
+  right: 446px;
+  bottom: -3px;
+  top: auto;
+}
+
+#OpenWorldCarousel .swiper-button-prev::after {
+  content: "";
+  background: url("../../Static/img/left_icon.png") center/100% 100% no-repeat;
+  width: 30px;
+  height: 30px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+#OpenWorldCarousel .swiper-button-next {
+  left: auto;
+  right: 0px;
+  bottom: -3px;
+  top: auto;
+}
+
+#OpenWorldCarousel .swiper-button-next::after {
+  content: "";
+  background: url("../../Static/img/left_icon.png") center/100% 100% no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+#OpenWorldCarousel .start_point_swiper .swiper-button-prev,
+#OpenWorldCarousel .end_point_swiper .swiper-button-next {
+  pointer-events: none;
+}
+
+#OpenWorldCarousel .start_point_swiper .swiper-button-prev::after,
+#OpenWorldCarousel .end_point_swiper .swiper-button-next::after {
+  background: url("../../Static/img/left_icon_disable.png") center/100% 100% no-repeat;
+  pointer-events: none;
+}
+/*# sourceMappingURL=OpenWorldCarousel.css.map */

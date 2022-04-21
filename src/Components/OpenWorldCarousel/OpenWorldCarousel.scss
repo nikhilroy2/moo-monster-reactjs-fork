@@ -1,0 +1,131 @@
+#OpenWorldCarousel {
+  position: relative;
+  
+  &::before {
+    content: "";
+    border-image: linear-gradient(90deg, transparent, #eedb7a 75%) 1;
+    position: absolute;
+    display: block;
+    width: 85%;
+    border-top: 0;
+    border-style: solid;
+    right: 0px;
+    top: -5%;
+  }
+  &::after {
+    content: "";
+    border-image: linear-gradient(90deg, transparent, #eedb7a 75%) 1;
+    position: absolute;
+    display: block;
+    width: 85%;
+    border-top: 0;
+    border-style: solid;
+    right: 0px;
+    bottom: -5%;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper_fixed_content {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 520px;
+    h2 {
+      font-size: 4rem;
+      color: var(--text-7a);
+      font-weight: bold;
+    }
+  }
+
+  .swiper-slide {
+    color: var(--text-white);
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .slideImg {
+    width: 427px;
+    height: 464px;
+  }
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+    .swiper_description {
+      position: absolute;
+      bottom: 40px;
+      right: 0;
+      font-size: 3.2rem;
+      width: 44%;
+      text-align: center;
+    }
+  }
+  .swiper-pagination {
+    text-align: right;
+    pointer-events: none;
+    padding-right: 30px;
+  }
+  .swiper-pagination-bullet {
+    pointer-events: visible;
+    background-color: var(--text-57);
+    width: 2.5vmax;
+    height: 0.1875em;
+    transition: all 0.3s;
+    display: inline-block;
+    opacity: 1;
+    border-radius: 0px;
+    &:hover {
+      background: var(--text-7a);
+    }
+    &.swiper-pagination-bullet-active {
+      background-color: var(--text-7a);
+      height: 0.375em;
+      margin-top: 0.1875em;
+      border-bottom-left-radius: 40%;
+      border-bottom-right-radius: 40%;
+    }
+  }
+
+  .swiper-button-prev {
+    left: auto;
+    right: 446px;
+    bottom: -3px;
+    top: auto;
+    &::after {
+      content: "";
+      background: url("../../Static/img/left_icon.png") center/100% 100%
+        no-repeat;
+      width: 30px;
+      height: 30px;
+      transform: scaleX(-1);
+    }
+  }
+
+  .swiper-button-next {
+    left: auto;
+    right: 0px;
+    bottom: -3px;
+    top: auto;
+    &::after {
+      content: "";
+      background: url("../../Static/img/left_icon.png") center/100% 100%
+        no-repeat;
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .start_point_swiper .swiper-button-prev,
+  .end_point_swiper .swiper-button-next {
+    pointer-events: none;
+    &::after {
+      background: url("../../Static/img/left_icon_disable.png") center/100% 100%
+        no-repeat;
+      pointer-events: none;
+    }
+  }
+}
