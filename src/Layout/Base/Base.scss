@@ -616,5 +616,8 @@
   main {
     position: relative;
     padding-top: 15rem;
+    @media (max-width: 600px) {
+      padding-top: 7rem;
+    }
   }
 }

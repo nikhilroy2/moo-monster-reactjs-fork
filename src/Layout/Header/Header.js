@@ -63,24 +63,32 @@ function Header(props) {
               />
             </a>
             {/* Toggle button */}
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-mdb-toggle="collapse"
-              data-mdb-target="#navbarButtonsExample"
-              aria-controls="navbarButtonsExample"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <i className="fas fa-bars fa-2x" />
-            </button>
+            <div className="d-flex align-items-center">
+              <div className="d-flex align-items-center d-lg-none me-3">
+                <button type="button" className="btn_app">
+                  Application
+                </button>
+              </div>
+              <button
+                className="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarButtonsExample"
+                aria-controls="navbarButtonsExample"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i className="fas fa-bars fa-2x" />
+              </button>
+            </div>
+
             {/* Collapsible wrapper */}
             <div
               className="collapse navbar-collapse "
               id="navbarButtonsExample"
             >
               {/* Left links */}
-              <ul className="navbar-nav flex-grow-1 justify-content-end mb-2 mb-lg-0">
+              <ul className="navbar-nav flex-grow-1 justify-content-end mb-2 mb-lg-0 pt-4 pt-lg-0">
                 {nav_item_list.map((v) => {
                   return (
                     <li className="nav-item" key={v.id}>
@@ -95,8 +103,8 @@ function Header(props) {
                 })}
               </ul>
               {/* Left links */}
-              <div className="d-flex align-items-center">
-                <button type="button" className=" btn_app">
+              <div className="d-none align-items-center d-lg-flex">
+                <button type="button" className="btn_app">
                   Application
                 </button>
               </div>

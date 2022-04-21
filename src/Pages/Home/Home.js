@@ -53,11 +53,12 @@ function Home(props) {
             <div className="col_wrapper home_content">
               <div className="w-100 text-center h-100 home_content_wrapper">
                 <img
+                  className="home_large_img"
                   src={require("../../Static/img/moo-logo.2ccf648.png")}
                   alt="img"
                 />
                 <h3>Available Now !</h3>
-                <div className="d-flex justify-content-center social_app">
+                <div className="d-flex flex-column align-items-center d-md-block justify-content-center social_app">
                   <a className="d-inline-block p-2" href="#">
                     <img
                       src={require("../../Static/img/app-store_home.png")}
@@ -74,8 +75,11 @@ function Home(props) {
                   </a>
                 </div>
 
-                <div className="action_controler">
-                  <a href="#" className="buy_egg btn_primary me-4">
+                <div className="action_controler d-flex flex-column align-items-center d-md-block">
+                  <a
+                    href="#"
+                    className="buy_egg btn_primary me-md-4 mb-3 mb-md-0"
+                  >
                     Buy Egg
                   </a>
                   <a href="#" className="register btn_secondary">

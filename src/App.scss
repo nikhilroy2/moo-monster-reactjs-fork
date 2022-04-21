@@ -81,6 +81,9 @@ section {
   font-family: hubby_bunny;
   padding: 0.375em 0.75em;
   border-radius: 6px;
+  @media (max-width: 600px) {
+    padding: 0.1em 0.3em;
+  }
   &:hover {
     background: var(--text-58) !important;
   }
@@ -92,6 +95,9 @@ section {
   font-family: hubby_bunny;
   padding: 0.375em 0.75em;
   border-radius: 6px;
+  @media (max-width: 600px) {
+    padding: 0.1em 0.3em;
+  }
   &:hover {
     background: var(--text-48) !important;
   }
@@ -108,7 +114,7 @@ section {
 .font_4 {
   font-size: 4rem;
 }
-.font-weight-bold{
+.font-weight-bold {
   font-weight: bold;
 }
 // ..........Custom font size ...................End

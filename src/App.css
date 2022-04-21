@@ -74,6 +74,12 @@ section .section_body {
   border-radius: 6px;
 }
 
+@media (max-width: 600px) {
+  .btn_secondary {
+    padding: 0.1em 0.3em;
+  }
+}
+
 .btn_secondary:hover {
   background: var(--text-58) !important;
 }
@@ -84,6 +90,12 @@ section .section_body {
   font-family: hubby_bunny;
   padding: 0.375em 0.75em;
   border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  .btn_primary {
+    padding: 0.1em 0.3em;
+  }
 }
 
 .btn_primary:hover {

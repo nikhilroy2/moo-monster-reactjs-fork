@@ -6,6 +6,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 768px) {
+      .home_large_img {
+        height: 30rem;
+      }
+    }
+    @media (max-width: 600px) {
+      .home_large_img {
+        height: 17rem;
+      }
+    }
     h3 {
       font-size: 2.3rem;
       color: var(--text-7a);
@@ -25,6 +35,9 @@
     .action_controler {
       a {
         font-size: 2.4rem;
+        @media (max-width: 767px) {
+          width: 26.7rem;
+        }
       }
     }
     .token_controller {
@@ -142,16 +155,16 @@
   .main_graphic {
     pointer-events: none;
     user-select: none;
-    .bg-parallax{
-      background-image: url('../../Static/img/bg-parallax.28de0d4.png');
+    .bg-parallax {
+      background-image: url("../../Static/img/bg-parallax.28de0d4.png");
       position: absolute;
-    z-index: -5;
-    // opacity: 1%;
-    height: 100%;
-    width: 100%;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    overflow: visible;
+      z-index: -5;
+      // opacity: 1%;
+      height: 100%;
+      width: 100%;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      overflow: visible;
     }
     .mills {
       position: absolute;

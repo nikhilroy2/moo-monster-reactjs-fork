@@ -49,7 +49,7 @@ function NFT(props) {
                   key={v.id}
                 >
                   <img className="icon" src={v.img} alt="img" />
-                  {v.description != "" && (
+                  {v.description !== "" && (
                     <p className="text_secondary text-center">
                       {v.description}
                     </p>
