@@ -6,6 +6,7 @@ import Home from "./Pages/Home/Home";
 import NFT from "./Pages/NFT/NFT";
 import Gameplay from "./Pages/Gameplay/Gameplay";
 import GameMode from "./Pages/GameMode/GameMode";
+import Tokenomic from "./Pages/Tokenomic/Tokenomic";
 // .............Pages ..............End
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <NFT></NFT>
         <Gameplay></Gameplay>
         <GameMode></GameMode>
+        <Tokenomic></Tokenomic>
       </Base>
     </div>
   );

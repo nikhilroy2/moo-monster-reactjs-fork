@@ -8,6 +8,7 @@
     img{
         z-index: 2;
         position: relative;
+        pointer-events: none;
     }
     video {
       position: absolute;

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAIQ,UAJE,CACR,uBAAuB,CACrB,mBAAmB,CACjB,eAAe,CACb,EAAE,CAAC;EACD,KAAK,EAAE,OAAO;EACd,MAAM,EAAE,OAAO;EACf,aAAa,EAAE,IAAI;CAKpB;;AAZT,AAQU,UARA,CACR,uBAAuB,CACrB,mBAAmB,CACjB,eAAe,CACb,EAAE,CAIA,GAAG,CAAC;EACF,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "Tokenomic.scss"
+    ],
+    "names": [],
+    "file": "Tokenomic.css"
+}

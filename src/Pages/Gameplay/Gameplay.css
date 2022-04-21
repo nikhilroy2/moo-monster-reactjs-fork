@@ -10,6 +10,7 @@
 #Gameplay .video_gameplay_box img {
   z-index: 2;
   position: relative;
+  pointer-events: none;
 }
 
 #Gameplay .video_gameplay_box video {
