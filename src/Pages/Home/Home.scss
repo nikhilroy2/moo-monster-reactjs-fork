@@ -1,17 +1,22 @@
 #Home {
   padding-bottom: 10rem;
   position: relative;
+  @media (max-width: 767px) {
+    padding-bottom: 3rem;
+  }
   .home_content {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     @media (max-width: 768px) {
+      height: 95vh;
       .home_large_img {
         height: 30rem;
       }
     }
     @media (max-width: 600px) {
+      height: 76vh;
       .home_large_img {
         height: 17rem;
       }
@@ -88,11 +93,28 @@
     z-index: 10;
     // border: solid;
     margin-left: 10%;
+    @media (max-width: 1199px) {
+      width: 40rem;
+    }
+    @media (max-width: 767px) {
+      margin-top: 4rem;
+    }
+    @media (max-width: 600px) {
+      width: 100%;
+      padding-top: 0rem;
+      margin-left: 0px;
+    }
     .monster_box_wrapper {
       height: 420px;
       background: url("../../Static/img/bg-header-info.dd4403f.png") center/100%
         100% no-repeat;
       padding: 3.2rem;
+      @media (max-width: 1199px) {
+        height: auto;
+      }
+      @media (max-width: 600px) {
+        padding: 1.5rem;
+      }
       .box_head {
         h2,
         h4,
@@ -102,13 +124,22 @@
         h2 {
           font-weight: 700;
           font-size: 6.4rem;
+          @media (max-width: 1199px) {
+            font-size: 3.7rem;
+          }
         }
         h4 {
           font-size: 2.8rem;
           font-weight: 700;
+          @media (max-width: 1199px) {
+            font-size: 2.2rem;
+          }
         }
         p {
           font-size: 1.8rem;
+          @media (max-width: 1199px) {
+            font-size: 1.4rem;
+          }
         }
       }
       .box_control {
@@ -125,6 +156,14 @@
           border: none;
           outline: none;
           font-weight: bold;
+          @media (max-width: 1199px) {
+            font-size: 2rem;
+            height: 6.5rem;
+          }
+          @media (max-width: 600px) {
+            font-size: 1.3rem;
+            height: 5rem;
+          }
         }
         button {
           background: url("../../Static/img/bg-btn-primary.d539a6a.png")
@@ -144,11 +183,21 @@
         center/100% 100% no-repeat;
       width: 100%;
       margin-top: 4rem;
+      @media (max-width: 1199px) {
+        height: 85px;
+        margin-top: 2rem;
+      }
       a {
         color: var(--text-7a);
         text-decoration: none;
         display: inline-block;
         padding: 1.3rem;
+        @media (max-width: 1199px) {
+          padding: 0.4rem;
+          img {
+            height: 33px;
+          }
+        }
       }
     }
   }

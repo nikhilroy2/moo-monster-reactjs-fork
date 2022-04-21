@@ -133,7 +133,7 @@ function Home(props) {
                 </div>
               </div>
               <div className="monster_box_footer">
-                <ul className="pt-4 list-unstyled d-flex justify-content-center">
+                <ul className="pt-3 pt-xl-4 list-unstyled d-flex justify-content-center">
                   {social_list_monster_box.map((v) => {
                     return (
                       <li key={v.id}>
@@ -159,7 +159,7 @@ export default Home;
 const MainGraphic = () => {
   const [IsAnimation, setIsAnimation] = useState(false);
   window.addEventListener("scroll", (e) => {
-    console.log(document.documentElement.scrollTop);
+    //console.log(document.documentElement.scrollTop);
     document.documentElement.scrollTop >= 150
       ? setIsAnimation(true)
       : setIsAnimation(false);
