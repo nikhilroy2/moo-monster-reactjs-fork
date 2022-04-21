@@ -29,7 +29,7 @@ function NFT(props) {
       <section>
         <div className="container">
           <div className="row">
-            <div className="col-12">
+            <div className="TRADING NOW ONol-12">
               <div className="col_wrapper">
                 <div className="row justify-content-center">
                   <div className="col-md-6">
@@ -43,7 +43,7 @@ function NFT(props) {
             {nft_trading_object.map((v) => {
               return (
                 <div
-                  className={`col-sm-12 ${
+                  className={`col-sm-12 mb-5 mb-md-0 ${
                     v.id == 2 ? "col-md-6" : "col-md-3"
                   } mb-5`}
                   key={v.id}
@@ -270,281 +270,287 @@ const BuyEggsContent = () => {
   ];
   return (
     <div id="BuyEggsContent">
-      <div className="container position-relative">
-        <div className="row">
-          <div className="col-12">
-            <div className="col_wrapper d-flex justify-content-between align-items-start">
-              <div className="eggs_content_control">
-                <div className="content_header"></div>
-                <div className="content_body">
-                  <table className="eggs_table">
-                    <tbody>
-                      <tr>
-                        <td onClick={() => setVideo_content_index(1)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/bolt-1-thumb.d8f8a9e.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                        <td onClick={() => setVideo_content_index(2)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/bolt-2-thumb.920c509.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                        <td onClick={() => setVideo_content_index(3)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/bolt-3-thumb.0d149db.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                        <td onClick={() => setVideo_content_index(4)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/bolt-4-thumb.5f8bb18.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                      </tr>
+      <section>
+        <div className="container position-lg-relative ">
+          <div className="row ">
+            <div className="col-12">
+              <div className="d-block d-lg-flex col_wrapper position-lg-relative buy_eggs_content  row justify-content-between align-items-start">
+                <div className="col-lg-6 h-100">
+                  <div className="eggs_content_control">
+                    <div className="content_header"></div>
+                    <div className="content_body">
+                      <table className="eggs_table">
+                        <tbody>
+                          <tr>
+                            <td onClick={() => setVideo_content_index(1)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/bolt-1-thumb.d8f8a9e.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                            <td onClick={() => setVideo_content_index(2)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/bolt-2-thumb.920c509.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                            <td onClick={() => setVideo_content_index(3)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/bolt-3-thumb.0d149db.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                            <td onClick={() => setVideo_content_index(4)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/bolt-4-thumb.5f8bb18.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                          </tr>
 
-                      <tr>
-                        <td onClick={() => setVideo_content_index(5)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/lava-1-thumb.9b6698a.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                        <td onClick={() => setVideo_content_index(6)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/lava-2-thumb.eaaa992.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                        <td onClick={() => setVideo_content_index(7)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/lava-3-thumb.c52148f.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                        <td onClick={() => setVideo_content_index(8)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/lava-4-thumb.2e6ce82.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                      </tr>
+                          <tr>
+                            <td onClick={() => setVideo_content_index(5)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/lava-1-thumb.9b6698a.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                            <td onClick={() => setVideo_content_index(6)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/lava-2-thumb.eaaa992.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                            <td onClick={() => setVideo_content_index(7)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/lava-3-thumb.c52148f.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                            <td onClick={() => setVideo_content_index(8)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/lava-4-thumb.2e6ce82.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                          </tr>
 
-                      <tr>
-                        <td onClick={() => setVideo_content_index(9)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/ace-1-thumb.c421f56.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                        <td onClick={() => setVideo_content_index(10)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/ace-2-thumb.e6ef728.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                        <td onClick={() => setVideo_content_index(11)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/ace-3-thumb.23673f9.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                        <td onClick={() => setVideo_content_index(12)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/ace-4-thumb.87d0430.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                      </tr>
+                          <tr>
+                            <td onClick={() => setVideo_content_index(9)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/ace-1-thumb.c421f56.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                            <td onClick={() => setVideo_content_index(10)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/ace-2-thumb.e6ef728.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                            <td onClick={() => setVideo_content_index(11)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/ace-3-thumb.23673f9.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                            <td onClick={() => setVideo_content_index(12)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/ace-4-thumb.87d0430.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                          </tr>
 
-                      <tr>
-                        <td onClick={() => setVideo_content_index(13)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/shadow-1-thumb.7c3aa6f.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                        <td onClick={() => setVideo_content_index(14)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/shadow-2-thumb.0b0d219.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                        <td onClick={() => setVideo_content_index(15)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/shadow-3-thumb.70d2273.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                        <td onClick={() => setVideo_content_index(16)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/shadow-4-thumb.63a2d5e.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                      </tr>
+                          <tr>
+                            <td onClick={() => setVideo_content_index(13)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/shadow-1-thumb.7c3aa6f.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                            <td onClick={() => setVideo_content_index(14)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/shadow-2-thumb.0b0d219.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                            <td onClick={() => setVideo_content_index(15)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/shadow-3-thumb.70d2273.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                            <td onClick={() => setVideo_content_index(16)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/shadow-4-thumb.63a2d5e.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                          </tr>
 
-                      <tr>
-                        <td onClick={() => setVideo_content_index(17)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/richie-1-thumb.eaa573b.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                        <td onClick={() => setVideo_content_index(18)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/richie-2-thumb.865ee39.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                        <td onClick={() => setVideo_content_index(19)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/richie-3-thumb.a6c5aca.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                        <td onClick={() => setVideo_content_index(20)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/richie-4-thumb.d92b9a2.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                      </tr>
+                          <tr>
+                            <td onClick={() => setVideo_content_index(17)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/richie-1-thumb.eaa573b.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                            <td onClick={() => setVideo_content_index(18)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/richie-2-thumb.865ee39.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                            <td onClick={() => setVideo_content_index(19)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/richie-3-thumb.a6c5aca.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                            <td onClick={() => setVideo_content_index(20)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/richie-4-thumb.d92b9a2.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                          </tr>
 
-                      <tr>
-                        <td onClick={() => setVideo_content_index(21)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/ice-1-thumb.c3eb1e6.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                        <td onClick={() => setVideo_content_index(22)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/ice-2-thumb.7b86adb.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                        <td onClick={() => setVideo_content_index(23)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/ice-3-thumb.a870980.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                        <td onClick={() => setVideo_content_index(24)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/ice-4-thumb.198f8c0.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                      </tr>
+                          <tr>
+                            <td onClick={() => setVideo_content_index(21)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/ice-1-thumb.c3eb1e6.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                            <td onClick={() => setVideo_content_index(22)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/ice-2-thumb.7b86adb.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                            <td onClick={() => setVideo_content_index(23)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/ice-3-thumb.a870980.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                            <td onClick={() => setVideo_content_index(24)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/ice-4-thumb.198f8c0.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                          </tr>
 
-                      <tr className="last_tr">
-                        <td onClick={() => setVideo_content_index(25)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/mind-1-thumb.da4cd92.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                        <td onClick={() => setVideo_content_index(26)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/mind-2-thumb.6575a06.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                        <td onClick={() => setVideo_content_index(27)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/mind-3-thumb.80261b9.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                        <td onClick={() => setVideo_content_index(28)}>
-                          {" "}
-                          <img
-                            src={require("../../Static/img/mind-4-thumb.039d48a.png")}
-                            alt="img"
-                          />{" "}
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <button className="buy_eggs">🥚 Buy Egg</button>
-                </div>
-                <div className="content_footer"></div>
-              </div>
-
-              <div className="eggs_control_viewer">
-                <div className="control_view_wrapper">
-                  <div className="control_header"></div>
-                  <div className="control_body">
-                    <div className="control_box">
-                      <h2>
-                        {
-                          video_content_object[Number(video_content_index) - 1]
-                            .title
-                        }
-                      </h2>
-                      <p className="text-white">
-                        {
-                          video_content_object[Number(video_content_index) - 1]
-                            .description
-                        }
-                      </p>
+                          <tr className="last_tr">
+                            <td onClick={() => setVideo_content_index(25)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/mind-1-thumb.da4cd92.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                            <td onClick={() => setVideo_content_index(26)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/mind-2-thumb.6575a06.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                            <td onClick={() => setVideo_content_index(27)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/mind-3-thumb.80261b9.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                            <td onClick={() => setVideo_content_index(28)}>
+                              {" "}
+                              <img
+                                src={require("../../Static/img/mind-4-thumb.039d48a.png")}
+                                alt="img"
+                              />{" "}
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <button className="buy_eggs">🥚 Buy Egg</button>
                     </div>
+                    <div className="content_footer"></div>
                   </div>
-                  <div className="control_footer"></div>
                 </div>
-                <div className="control_play_view_box">
-                  <video
-                    id="preview-video"
-                    width="100%"
-                    height="100%"
-                    playsInline
-                    muted="muted"
-                    loop="loop"
-                    autoPlay="autoplay"
-                    src={
-                      video_content_object[Number(video_content_index) - 1]
-                        .video
-                    }
-                  >
-                    Your browser does not support the video tag.
-                  </video>
+
+                <div className="eggs_control_viewer col-lg-6 ">
+                  <div className="control_view_wrapper">
+                    <div className="control_header"></div>
+                    <div className="control_body">
+                      <div className="control_box">
+                        <h2>
+                          {
+                            video_content_object[
+                              Number(video_content_index) - 1
+                            ].title
+                          }
+                        </h2>
+                        <p className="text-white">
+                          {
+                            video_content_object[
+                              Number(video_content_index) - 1
+                            ].description
+                          }
+                        </p>
+                      </div>
+                    </div>
+                    <div className="control_footer"></div>
+                  </div>
+                  <div className="control_play_view_box">
+                    <video
+                      id="preview-video"
+                      width="100%"
+                      height="100%"
+                      playsInline
+                      muted="muted"
+                      loop="loop"
+                      autoPlay="autoplay"
+                      src={
+                        video_content_object[Number(video_content_index) - 1]
+                          .video
+                      }
+                    >
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

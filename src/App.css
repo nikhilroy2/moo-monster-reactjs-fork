@@ -50,8 +50,21 @@ section .section_title {
   font-weight: 700;
 }
 
+@media (max-width: 600px) {
+  section .section_title {
+    font-size: 3rem;
+    padding: 0.3rem;
+  }
+}
+
 section .section_title.mt_section {
-  margin-top: 10rem;
+  margin-top: 8rem;
+}
+
+@media (max-width: 600px) {
+  section .section_title.mt_section {
+    margin-top: 5rem;
+  }
 }
 
 section .title_secondary {
@@ -112,5 +125,11 @@ section .section_body {
 
 .font-weight-bold {
   font-weight: bold;
+}
+
+@media (min-width: 992px) {
+  .position-lg-relative {
+    position: relative;
+  }
 }
 /*# sourceMappingURL=App.css.map */

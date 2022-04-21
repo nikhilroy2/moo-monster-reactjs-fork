@@ -1,7 +1,7 @@
 #NFT {
   .trading_row {
     padding-top: 2rem;
-    padding-bottom: 5rem;
+    padding-bottom: 0px;
     .icon {
       max-width: 90%;
       width: 350px;
@@ -18,13 +18,33 @@
     }
   }
   #BuyEggsContent {
-    background: url("../../Static/img/background.f5406ce.png") center/cover
-      no-repeat;
-    padding: 6.1rem;
-    border: solid;
+    position: relative;
+    @media (max-width: 991px) {
+      min-height: 1180px;
+    }
+    section {
+      padding: 6.1rem;
+      background: url("../../Static/img/background.f5406ce.png") center/cover
+        no-repeat;
+    }
+    .buy_eggs_content {
+      min-height: 850px;
+      @media (max-width: 991px) {
+        min-height: 500px;
+      }
+    }
     .eggs_content_control {
       display: inline-block;
-
+      position: absolute;
+      @media (max-width: 991px) {
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      @media (max-width: 767px) {
+        width: 70%;
+        text-align: center;
+      }
       .content_header {
         height: 2rem;
         background: url("../../Static/img/bg-box.711e234.png");
@@ -44,12 +64,21 @@
         .eggs_table {
           border-collapse: separate;
           border-spacing: 0px;
+          margin: auto;
           td {
             width: 9rem;
             height: 9rem;
             border: 3px solid var(--text-57);
             border-left-color: transparent;
             border-bottom-color: transparent;
+            @media (max-width: 1230px) {
+              width: 7rem;
+              height: 7rem;
+            }
+            @media (max-width: 991px) {
+              width: 6rem;
+              height: 6rem;
+            }
             &:first-child {
               border-left: 3px solid var(--text-57);
             }
@@ -84,6 +113,10 @@
           border: none;
           outline: none;
           font-size: 3.2rem;
+          @media (max-width: 991px) {
+            font-size: 2rem;
+            height: 5rem;
+          }
           &:hover {
             color: var(--text-white);
           }
@@ -92,6 +125,17 @@
     }
     .eggs_control_viewer {
       width: 54rem;
+      @media (max-width: 1230px) {
+        width: 100%;
+        max-width: 40rem !important;
+        display: inline-block;
+      }
+      @media (max-width: 991px) {
+        width: 50rem !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
       .control_view_wrapper {
         .control_header {
           height: 2rem;
@@ -120,12 +164,28 @@
       }
       .control_play_view_box {
         position: absolute;
-        right: -160px;
-        bottom: 32px;
+        right: -180px;
+        bottom: 0px;
         width: 900px;
         height: 900px;
         pointer-events: none;
         user-select: none;
+        @media (max-width: 1230px) {
+          right: 0px;
+          width: 600px;
+          height: 600px;
+          bottom: 20%;
+        }
+        @media (max-width: 991px) {
+          bottom: auto;
+          top: 9%;
+          width: 400px;
+          height: 400px;
+          right: auto;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
         video {
           width: 100%;
           height: 100%;
@@ -133,7 +193,4 @@
       }
     }
   }
-
- 
-  
 }

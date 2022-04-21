@@ -1,6 +1,6 @@
 #NFT .trading_row {
   padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 0px;
 }
 
 #NFT .trading_row .icon {
@@ -20,13 +20,49 @@
 }
 
 #NFT #BuyEggsContent {
-  background: url("../../Static/img/background.f5406ce.png") center/cover no-repeat;
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  #NFT #BuyEggsContent {
+    min-height: 1180px;
+  }
+}
+
+#NFT #BuyEggsContent section {
   padding: 6.1rem;
-  border: solid;
+  background: url("../../Static/img/background.f5406ce.png") center/cover no-repeat;
+}
+
+#NFT #BuyEggsContent .buy_eggs_content {
+  min-height: 850px;
+}
+
+@media (max-width: 991px) {
+  #NFT #BuyEggsContent .buy_eggs_content {
+    min-height: 500px;
+  }
 }
 
 #NFT #BuyEggsContent .eggs_content_control {
   display: inline-block;
+  position: absolute;
+}
+
+@media (max-width: 991px) {
+  #NFT #BuyEggsContent .eggs_content_control {
+    bottom: 0px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 767px) {
+  #NFT #BuyEggsContent .eggs_content_control {
+    width: 70%;
+    text-align: center;
+  }
 }
 
 #NFT #BuyEggsContent .eggs_content_control .content_header {
@@ -52,6 +88,7 @@
 #NFT #BuyEggsContent .eggs_content_control .content_body .eggs_table {
   border-collapse: separate;
   border-spacing: 0px;
+  margin: auto;
 }
 
 #NFT #BuyEggsContent .eggs_content_control .content_body .eggs_table td {
@@ -61,6 +98,20 @@
   border-left-color: transparent;
   border-bottom-color: transparent;
   cursor: pointer;
+}
+
+@media (max-width: 1230px) {
+  #NFT #BuyEggsContent .eggs_content_control .content_body .eggs_table td {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+@media (max-width: 991px) {
+  #NFT #BuyEggsContent .eggs_content_control .content_body .eggs_table td {
+    width: 6rem;
+    height: 6rem;
+  }
 }
 
 #NFT #BuyEggsContent .eggs_content_control .content_body .eggs_table td:first-child {
@@ -102,12 +153,36 @@
   font-size: 3.2rem;
 }
 
+@media (max-width: 991px) {
+  #NFT #BuyEggsContent .eggs_content_control .content_body .buy_eggs {
+    font-size: 2rem;
+    height: 5rem;
+  }
+}
+
 #NFT #BuyEggsContent .eggs_content_control .content_body .buy_eggs:hover {
   color: var(--text-white);
 }
 
 #NFT #BuyEggsContent .eggs_control_viewer {
   width: 54rem;
+}
+
+@media (max-width: 1230px) {
+  #NFT #BuyEggsContent .eggs_control_viewer {
+    width: 100%;
+    max-width: 40rem !important;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 991px) {
+  #NFT #BuyEggsContent .eggs_control_viewer {
+    width: 50rem !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 }
 
 #NFT #BuyEggsContent .eggs_control_viewer .control_view_wrapper .control_header {
@@ -138,8 +213,8 @@
 
 #NFT #BuyEggsContent .eggs_control_viewer .control_play_view_box {
   position: absolute;
-  right: -160px;
-  bottom: 32px;
+  right: -180px;
+  bottom: 0px;
   width: 900px;
   height: 900px;
   pointer-events: none;
@@ -147,6 +222,28 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+@media (max-width: 1230px) {
+  #NFT #BuyEggsContent .eggs_control_viewer .control_play_view_box {
+    right: 0px;
+    width: 600px;
+    height: 600px;
+    bottom: 20%;
+  }
+}
+
+@media (max-width: 991px) {
+  #NFT #BuyEggsContent .eggs_control_viewer .control_play_view_box {
+    bottom: auto;
+    top: 9%;
+    width: 400px;
+    height: 400px;
+    right: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 #NFT #BuyEggsContent .eggs_control_viewer .control_play_view_box video {

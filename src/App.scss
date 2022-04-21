@@ -57,8 +57,15 @@ section {
     color: var(--text-21);
     font-size: 4rem;
     font-weight: 700;
+    @media (max-width: 600px) {
+      font-size: 3rem;
+      padding: 0.3rem;
+    }
     &.mt_section {
-      margin-top: 10rem;
+      margin-top: 8rem;
+      @media (max-width: 600px) {
+        margin-top: 5rem;
+      }
     }
   }
   .title_secondary {
@@ -118,3 +125,9 @@ section {
   font-weight: bold;
 }
 // ..........Custom font size ...................End
+// responsive class
+@media (min-width: 992px) {
+  .position-lg-relative {
+    position: relative;
+  }
+}
