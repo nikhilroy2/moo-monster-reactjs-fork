@@ -54,6 +54,13 @@ section .section_title.mt_section {
   margin-top: 10rem;
 }
 
+section .title_secondary {
+  text-align: center;
+  color: var(--text-7a);
+  font-size: 4rem;
+  font-weight: 700;
+}
+
 section .section_body {
   padding-top: 3rem;
   padding-bottom: 7rem;
@@ -89,5 +96,9 @@ section .section_body {
 
 .font_4 {
   font-size: 4rem;
+}
+
+.font-weight-bold {
+  font-weight: bold;
 }
 /*# sourceMappingURL=App.css.map */

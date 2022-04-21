@@ -61,6 +61,12 @@ section {
       margin-top: 10rem;
     }
   }
+  .title_secondary {
+    text-align: center;
+    color: var(--text-7a);
+    font-size: 4rem;
+    font-weight: 700;
+  }
   .section_body {
     padding-top: 3rem;
     padding-bottom: 7rem;
@@ -101,5 +107,8 @@ section {
 // ..........Custom font size ...................
 .font_4 {
   font-size: 4rem;
+}
+.font-weight-bold{
+  font-weight: bold;
 }
 // ..........Custom font size ...................End
