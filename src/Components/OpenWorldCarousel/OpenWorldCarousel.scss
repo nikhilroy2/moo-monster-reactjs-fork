@@ -1,6 +1,6 @@
 #OpenWorldCarousel {
   position: relative;
-  
+
   &::before {
     content: "";
     border-image: linear-gradient(90deg, transparent, #eedb7a 75%) 1;
@@ -27,12 +27,27 @@
   .swiper {
     width: 100%;
     height: 100%;
+    @media (max-width: 767px) {
+      padding-bottom: 20rem;
+    }
   }
   .swiper_fixed_content {
     position: absolute;
-    top: 0px;
+    top: 50%;
     right: 0px;
-    width: 520px;
+    width: 421px;
+    transform: translateY(-50%);
+    z-index: 2;
+    @media (max-width: 767px) {
+      right: 50%;
+      transform: translate(50%, -50%);
+      text-align: center;
+      top: 75%;
+    }
+    @media (max-width: 450px) {
+      width: 100%;
+      top: 70%;
+    }
     h2 {
       font-size: 4rem;
       color: var(--text-7a);
@@ -47,11 +62,16 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    @media (max-width: 767px) {
+      justify-content: center;
+    }
   }
 
   .slideImg {
-    width: 427px;
-    height: 464px;
+    height: 460px;
+    @media (max-width: 767px) {
+      height: 30rem;
+    }
   }
   .swiper {
     margin-left: auto;
@@ -61,24 +81,38 @@
       bottom: 40px;
       right: 0;
       font-size: 3.2rem;
-      width: 44%;
+      width: 378px;
       text-align: center;
+      @media (max-width: 767px) {
+        right: 50%;
+        bottom: -57%;
+        transform: translateX(50%);
+      }
     }
   }
   .swiper-pagination {
     text-align: right;
     pointer-events: none;
     padding-right: 30px;
+    @media (max-width: 767px) {
+      text-align: center;
+    }
   }
   .swiper-pagination-bullet {
     pointer-events: visible;
     background-color: var(--text-57);
-    width: 2.5vmax;
+    width: 3.5rem;
     height: 0.1875em;
     transition: all 0.3s;
     display: inline-block;
     opacity: 1;
     border-radius: 0px;
+    @media (max-width: 500px) {
+      width: 2.5rem;
+    }
+    @media (max-width: 430px) {
+      width: 1.5rem;
+    }
     &:hover {
       background: var(--text-7a);
     }
@@ -93,9 +127,18 @@
 
   .swiper-button-prev {
     left: auto;
-    right: 446px;
+    right: 378px;
     bottom: -3px;
     top: auto;
+    @media (max-width: 767px) {
+      right: calc(100% - 10rem);
+    }
+    @media (max-width: 600px) {
+      right: calc(100% - 5rem);
+    }
+    @media (max-width: 340px) {
+      right: calc(100% - 3rem);
+    }
     &::after {
       content: "";
       background: url("../../Static/img/left_icon.png") center/100% 100%
@@ -111,6 +154,15 @@
     right: 0px;
     bottom: -3px;
     top: auto;
+    @media (max-width: 767px) {
+      right: 10rem;
+    }
+    @media (max-width: 600px) {
+      right: 5rem;
+    }
+    @media (max-width: 340px) {
+      right: 3rem;
+    }
     &::after {
       content: "";
       background: url("../../Static/img/left_icon.png") center/100% 100%

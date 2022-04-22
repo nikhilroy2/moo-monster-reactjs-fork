@@ -14,7 +14,7 @@ function ContentSectionBox({
       <div className="container">
         {isLeftBox ? (
           <div className="row align-items-end align-items-md-center">
-            <div className="text-center col-md-6">
+            <div className="text-center col-md-6 ">
               <div className="col_wrapper content_box_img">
                 <img src={boxImg} alt="img" />
               </div>
@@ -28,14 +28,14 @@ function ContentSectionBox({
           </div>
         ) : (
           <div className="row align-items-end align-items-md-center">
-            <div className="text-center text-md-start col-md-6">
+            <div className="text-center text-md-start col-md-6 order-2 order-md-1">
               <h3 className="text_secondary font-weight-bolder font_4">
                 {boxTitle}
               </h3>
               <p className="text-white">{boxDescription}</p>
             </div>
 
-            <div className="text-center col-md-6">
+            <div className="text-center col-md-6 order-1 order-md-2">
               <div className="col_wrapper content_box_img">
                 <img src={boxImg} alt="img" />
               </div>

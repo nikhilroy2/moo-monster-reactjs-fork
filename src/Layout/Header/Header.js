@@ -1,48 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 function Header(props) {
+  const [navActiveIndex, setNavActiveIndex] = useState(1);
   const nav_item_list = [
     {
       id: 1,
       name: "Home",
       link: "#",
-      activeClass: "active_nav_action",
+      activeClass: navActiveIndex === 1 ? "active_nav_action" : "",
     },
     {
       id: 2,
       name: "NFT",
-      link: "#",
-      activeClass: "",
+      link: "#NFT",
+      activeClass: navActiveIndex === 2 ? "active_nav_action" : "",
     },
     {
       id: 3,
       name: "Gameplay",
-      link: "#",
-      activeClass: "",
+      link: "#Gameplay",
+      activeClass: navActiveIndex === 3 ? "active_nav_action" : "",
     },
     {
       id: 4,
       name: "Game mode",
-      link: "#",
-      activeClass: "",
+      link: "#GameMode",
+      activeClass: navActiveIndex === 4 ? "active_nav_action" : "",
     },
     {
       id: 5,
       name: "Tokenomic",
-      link: "#",
-      activeClass: "",
+      link: "#Tokenomic",
+      activeClass: navActiveIndex === 5 ? "active_nav_action" : "",
     },
     {
       id: 6,
       name: "About us",
-      link: "#",
-      activeClass: "",
+      link: "#AboutUs",
+      activeClass: navActiveIndex === 6 ? "active_nav_action" : "",
     },
     {
       id: 7,
       name: "Whitepaper",
-      link: "#",
-      activeClass: "",
+      link: "https://moomonster.gitbook.io/moo-monster-whitepaper/",
+      activeClass: navActiveIndex === 7 ? "active_nav_action" : "",
     },
   ];
   return (
@@ -95,6 +96,8 @@ function Header(props) {
                       <a
                         className={`nav-link nav_action_link ${v.activeClass}`}
                         href={v.link}
+                        target={v.name === "Whitepaper" ? "_blank" : "_self"}
+                        onClick={() => setNavActiveIndex(v.id)}
                       >
                         {v.name}
                       </a>

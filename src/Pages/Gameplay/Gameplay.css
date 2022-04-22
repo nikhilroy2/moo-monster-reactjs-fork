@@ -24,4 +24,10 @@
           transform: translateX(-50%);
   border: none;
 }
+
+@media (max-width: 600px) {
+  #Gameplay .social_app img {
+    height: 6rem;
+  }
+}
 /*# sourceMappingURL=Gameplay.css.map */

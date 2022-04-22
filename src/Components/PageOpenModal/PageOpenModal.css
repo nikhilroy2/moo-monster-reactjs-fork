@@ -3,6 +3,18 @@
   color: white;
 }
 
+@media (max-width: 991px) {
+  #PageOpenModal .modal-content {
+    max-width: 50rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #PageOpenModal .modal-content {
+    max-width: 100%;
+  }
+}
+
 #PageOpenModal .modal-content .modal-body,
 #PageOpenModal .modal-content .modal-footer {
   border: none;
@@ -65,5 +77,11 @@
 
 #PageOpenModal .swiper-pagination-bullet.swiper-pagination-bullet-active {
   opacity: 1;
+}
+
+@media (max-width: 600px) {
+  #PageOpenModal .social_list img {
+    height: 3rem;
+  }
 }
 /*# sourceMappingURL=PageOpenModal.css.map */

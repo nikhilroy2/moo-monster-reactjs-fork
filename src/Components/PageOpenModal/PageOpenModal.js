@@ -70,11 +70,11 @@ function PageOpenModal(props) {
             <div className="modal-header border-0">
               <button
                 type="button"
-                className="btn-close text-white"
+                className="btn-close text-white text-lowercase"
                 data-mdb-dismiss="modal"
                 aria-label="Close"
               >
-                x
+                <i className="fas fa-times    "></i>
               </button>
             </div>
             <div className="modal-body p-3">

@@ -19,7 +19,7 @@ function Gameplay(props) {
           <div className="row pt-3 pb-5 mt-2 mb-4">
             <div className="col-12">
               <div className="col_wrapper">
-                <div className="d-flex justify-content-center social_app">
+                <div className="d-flex flex-wrap justify-content-center social_app">
                   <a className="d-inline-block p-2" href="#">
                     <img
                       src={require("../../Static/img/app-store_home.png")}

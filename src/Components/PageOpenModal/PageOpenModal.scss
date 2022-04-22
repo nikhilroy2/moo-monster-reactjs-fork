@@ -2,6 +2,12 @@
   .modal-content {
     background: var(--text-2f) !important;
     color: white;
+    @media (max-width: 991px) {
+      max-width: 50rem;
+    }
+    @media (max-width: 600px) {
+      max-width: 100%;
+    }
     .modal-body,
     .modal-footer {
       border: none;
@@ -69,6 +75,13 @@
     opacity: 0.5;
     &.swiper-pagination-bullet-active {
       opacity: 1;
+    }
+  }
+  .social_list {
+    img {
+      @media (max-width: 600px) {
+        height: 3rem;
+      }
     }
   }
 

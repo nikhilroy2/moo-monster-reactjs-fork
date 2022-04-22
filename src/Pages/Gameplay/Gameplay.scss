@@ -5,10 +5,10 @@
     img {
       width: 100%;
     }
-    img{
-        z-index: 2;
-        position: relative;
-        pointer-events: none;
+    img {
+      z-index: 2;
+      position: relative;
+      pointer-events: none;
     }
     video {
       position: absolute;
@@ -19,7 +19,13 @@
       left: 50%;
       transform: translateX(-50%);
       border: none;
-      
+    }
+  }
+  .social_app {
+    img {
+      @media (max-width: 600px) {
+        height: 6rem;
+      }
     }
   }
 }

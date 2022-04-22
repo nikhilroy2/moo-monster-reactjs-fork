@@ -27,12 +27,21 @@
   .content_box_img {
     min-height: 45rem;
     position: relative;
+    @media (max-width: 600px) {
+      min-height: 25rem;
+    }
+    @media (max-width: 400px) {
+      min-height: 17rem;
+    }
     img {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 100%;
+      @media (max-width: 767px) {
+        width: 50%;
+      }
     }
   }
   &.right_box {
