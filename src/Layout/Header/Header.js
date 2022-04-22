@@ -1,49 +1,53 @@
 import React, { useState } from "react";
 import "./Header.css";
+import {
+  Link,
+  DirectLink,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
+
 function Header(props) {
   const [navActiveIndex, setNavActiveIndex] = useState(1);
   const nav_item_list = [
     {
       id: 1,
       name: "Home",
-      link: "#",
+      link: "home",
       activeClass: navActiveIndex === 1 ? "active_nav_action" : "",
     },
     {
       id: 2,
       name: "NFT",
-      link: "#NFT",
+      link: "nft",
       activeClass: navActiveIndex === 2 ? "active_nav_action" : "",
     },
     {
       id: 3,
       name: "Gameplay",
-      link: "#Gameplay",
+      link: "gameplay",
       activeClass: navActiveIndex === 3 ? "active_nav_action" : "",
     },
     {
       id: 4,
       name: "Game mode",
-      link: "#GameMode",
+      link: "gamemode",
       activeClass: navActiveIndex === 4 ? "active_nav_action" : "",
     },
     {
       id: 5,
       name: "Tokenomic",
-      link: "#Tokenomic",
+      link: "tokenomic",
       activeClass: navActiveIndex === 5 ? "active_nav_action" : "",
     },
     {
       id: 6,
       name: "About us",
-      link: "#AboutUs",
+      link: "aboutus",
       activeClass: navActiveIndex === 6 ? "active_nav_action" : "",
-    },
-    {
-      id: 7,
-      name: "Whitepaper",
-      link: "https://moomonster.gitbook.io/moo-monster-whitepaper/",
-      activeClass: navActiveIndex === 7 ? "active_nav_action" : "",
     },
   ];
   return (
@@ -93,17 +97,31 @@ function Header(props) {
                 {nav_item_list.map((v) => {
                   return (
                     <li className="nav-item" key={v.id}>
-                      <a
-                        className={`nav-link nav_action_link ${v.activeClass}`}
-                        href={v.link}
+                      <Link
+                        activeClass="active_nav_action"
+                        className={`nav-link nav_action_link`}
+                        to={v.link}
                         target={v.name === "Whitepaper" ? "_blank" : "_self"}
-                        onClick={() => setNavActiveIndex(v.id)}
+                        smooth={true}
+                        duration={1}
+                        spy={true}
+                        style={{ cursor: "pointer" }}
                       >
                         {v.name}
-                      </a>
+                      </Link>
                     </li>
                   );
                 })}
+
+                <li className="nav-item">
+                  <a
+                    href="https://moomonster.gitbook.io/moo-monster-whitepaper"
+                    className="nav-link nav_action_link"
+                    target="_blank"
+                  >
+                    Whitepaper
+                  </a>
+                </li>
               </ul>
               {/* Left links */}
               <div className="d-none align-items-center d-lg-flex">

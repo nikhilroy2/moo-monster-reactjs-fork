@@ -1,33 +1,37 @@
 import React from "react";
 import ContentSectionBox from "../../Components/ContentSectionBox/ContentSectionBox";
 import OpenWorldCarousel from "../../Components/OpenWorldCarousel/OpenWorldCarousel";
+import { Element } from "react-scroll";
+
 function GameMode(props) {
   return (
-    <div id="GameMode">
-      <section>
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <div className="col_wrapper">
-                <div className="row justify-content-center">
-                  <div className="col-md-6">
-                    <h3 className="section_title mt_section">Game Mode</h3>
-                    <p className="text_secondary py-5 text-center">
-                      Discover the Mooniverse and find a variety of fun that
-                      awaits you.
-                    </p>
+    <Element name="gamemode">
+      <div id="GameMode">
+        <section>
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <div className="col_wrapper">
+                  <div className="row justify-content-center">
+                    <div className="col-md-6">
+                      <h3 className="section_title mt_section">Game Mode</h3>
+                      <p className="text_secondary py-5 text-center">
+                        Discover the Mooniverse and find a variety of fun that
+                        awaits you.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <PVE></PVE>
-        <PVP></PVP>
-        <OpenWorldCarousel></OpenWorldCarousel>
-        <Metaverse></Metaverse>
-      </section>
-    </div>
+          <PVE></PVE>
+          <PVP></PVP>
+          <OpenWorldCarousel></OpenWorldCarousel>
+          <Metaverse></Metaverse>
+        </section>
+      </div>
+    </Element>
   );
 }
 

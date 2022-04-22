@@ -1,5 +1,6 @@
 import React from "react";
 import "./AboutUs.css";
+import { Element } from "react-scroll";
 
 function AboutUs(props) {
   return (
@@ -16,25 +17,27 @@ export default AboutUs;
 
 const OurTeam = () => {
   return (
-    <div id="OurTeam">
-      <section>
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <h2 className="title_secondary mb-5">Our Team</h2>
-              <div className="section_body">
-                <div className="team_frame mb-5">
-                  <img
-                    src={require("../../Static/img/team_frame.e33b1d6.png")}
-                    alt="img"
-                  />
+    <Element name="aboutus">
+      <div id="OurTeam">
+        <section>
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <h2 className="title_secondary mb-5">Our Team</h2>
+                <div className="section_body">
+                  <div className="team_frame mb-5">
+                    <img
+                      src={require("../../Static/img/team_frame.e33b1d6.png")}
+                      alt="img"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </Element>
   );
 };
 const Developer = () => {

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Tokenomic.css";
+import { Element } from "react-scroll";
 
 function Tokenomic(props) {
   const tokenomic_list_object_1 = [
@@ -56,79 +57,81 @@ function Tokenomic(props) {
     },
   ];
   return (
-    <div id="Tokenomic">
-      <section>
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <div className="col_wrapper">
-                <div className="row justify-content-center">
-                  <div className="col-md-6">
-                    <h3 className="section_title mt_section">Tokenomics</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12">
-              <div className="section_body">
-                <div className="tokenomic_wrapper">
-                  <div className="head text-center my-5 my-md-0 py-4 py-md-0">
-                    <div className="row justify-content-center text-center">
-                      <div className="col-sm-7">
-                        <h4 className="text_secondary font_4 font-weight-bold">
-                          $MOO Coin
-                        </h4>
-                        <p className="text-white">
-                          The MooMonster token is a Governance token with a
-                          total supply of 170,000,000 tokens, which can be used
-                          as follows:
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="body">
-                    <div className="d-md-flex justify-content-between tokenomic_flex_wrapper">
-                      <div className="tokenomic_flex_box">
-                        <ul className="list-unstyled tokenomic_list justify-content-center d-flex d-md-block">
-                          {tokenomic_list_object_1.map((v) => {
-                            return (
-                              <li key={v.id}>
-                                <img src={v.img} alt="img" />
-                              </li>
-                            );
-                          })}
-                        </ul>
-                      </div>
-                      <div className="tokenomic_flex_box text-center pt-3 pt-lg-5 flex-grow-1">
-                        <img
-                          className="d-inline-block  mt-3 mt-lg-5 tokenomic_middle_img"
-                          src={require("../../Static/img/moo-coin.a494335.png")}
-                          alt="img"
-                          style={{ width: "80%" }}
-                        />
-                      </div>
-                      <div className="tokenomic_flex_box">
-                        <ul className="list-unstyled tokenomic_list justify-content-center d-flex d-md-block">
-                          {tokenomic_list_object_2.map((v) => {
-                            return (
-                              <li key={v.id}>
-                                <img src={v.img} alt="img" />
-                              </li>
-                            );
-                          })}
-                        </ul>
-                      </div>
+    <Element name="tokenomic">
+      <div id="Tokenomic">
+        <section>
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <div className="col_wrapper">
+                  <div className="row justify-content-center">
+                    <div className="col-md-6">
+                      <h3 className="section_title mt_section">Tokenomics</h3>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div className="row">
+              <div className="col-12">
+                <div className="section_body">
+                  <div className="tokenomic_wrapper">
+                    <div className="head text-center my-5 my-md-0 py-4 py-md-0">
+                      <div className="row justify-content-center text-center">
+                        <div className="col-sm-7">
+                          <h4 className="text_secondary font_4 font-weight-bold">
+                            $MOO Coin
+                          </h4>
+                          <p className="text-white">
+                            The MooMonster token is a Governance token with a
+                            total supply of 170,000,000 tokens, which can be
+                            used as follows:
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="body">
+                      <div className="d-md-flex justify-content-between tokenomic_flex_wrapper">
+                        <div className="tokenomic_flex_box">
+                          <ul className="list-unstyled tokenomic_list justify-content-center d-flex d-md-block">
+                            {tokenomic_list_object_1.map((v) => {
+                              return (
+                                <li key={v.id}>
+                                  <img src={v.img} alt="img" />
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        </div>
+                        <div className="tokenomic_flex_box text-center pt-3 pt-lg-5 flex-grow-1">
+                          <img
+                            className="d-inline-block  mt-3 mt-lg-5 tokenomic_middle_img"
+                            src={require("../../Static/img/moo-coin.a494335.png")}
+                            alt="img"
+                            style={{ width: "80%" }}
+                          />
+                        </div>
+                        <div className="tokenomic_flex_box">
+                          <ul className="list-unstyled tokenomic_list justify-content-center d-flex d-md-block">
+                            {tokenomic_list_object_2.map((v) => {
+                              return (
+                                <li key={v.id}>
+                                  <img src={v.img} alt="img" />
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </Element>
   );
 }
 

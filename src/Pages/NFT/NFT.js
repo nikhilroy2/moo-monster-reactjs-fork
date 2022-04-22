@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./NFT.css";
+import { Element } from "react-scroll";
 
 import ContentSectionBox from "../../Components/ContentSectionBox/ContentSectionBox";
 
@@ -25,72 +26,76 @@ function NFT(props) {
     },
   ];
   return (
-    <div id="NFT">
-      <section>
-        <div className="container">
-          <div className="row">
-            <div className="TRADING NOW ONol-12">
-              <div className="col_wrapper">
-                <div className="row justify-content-center">
-                  <div className="col-md-6">
-                    <h3 className="section_title mt_section">TRADING NOW ON</h3>
+    <Element name="nft">
+      <div id="NFT">
+        <section>
+          <div className="container">
+            <div className="row">
+              <div className="TRADING NOW ONol-12">
+                <div className="col_wrapper">
+                  <div className="row justify-content-center">
+                    <div className="col-md-6">
+                      <h3 className="section_title mt_section">
+                        TRADING NOW ON
+                      </h3>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="row justify-content-center trading_row mt-5 align-items-center">
-            {nft_trading_object.map((v) => {
-              return (
-                <div
-                  className={`col-sm-12 mb-5 mb-md-0 ${
-                    v.id == 2 ? "col-md-6" : "col-md-3"
-                  } mb-5`}
-                  key={v.id}
-                >
-                  <img className="icon" src={v.img} alt="img" />
-                  {v.description !== "" && (
-                    <p className="text_secondary text-center">
-                      {v.description}
-                    </p>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <div className="col_wrapper">
-                <div className="row justify-content-center">
-                  <div className="col-md-6">
-                    <h3 className="section_title mt_section">NFT</h3>
-                    <div className="section_body">
-                      <p
-                        style={{ fontSize: "1.5rem" }}
-                        className="description text_secondary text-center font-weight-bold"
-                      >
-                        Get yourselves ready. Because there are tons of
-                        characters, items and other things waiting for you to
-                        own.
+            <div className="row justify-content-center trading_row mt-5 align-items-center">
+              {nft_trading_object.map((v) => {
+                return (
+                  <div
+                    className={`col-sm-12 mb-5 mb-md-0 ${
+                      v.id == 2 ? "col-md-6" : "col-md-3"
+                    } mb-5`}
+                    key={v.id}
+                  >
+                    <img className="icon" src={v.img} alt="img" />
+                    {v.description !== "" && (
+                      <p className="text_secondary text-center">
+                        {v.description}
                       </p>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <div className="col_wrapper">
+                  <div className="row justify-content-center">
+                    <div className="col-md-6">
+                      <h3 className="section_title mt_section">NFT</h3>
+                      <div className="section_body">
+                        <p
+                          style={{ fontSize: "1.5rem" }}
+                          className="description text_secondary text-center font-weight-bold"
+                        >
+                          Get yourselves ready. Because there are tons of
+                          characters, items and other things waiting for you to
+                          own.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <BuyEggsContent></BuyEggsContent>
+          <BuyEggsContent></BuyEggsContent>
 
-        <LandNFT></LandNFT>
-        <MetaVerseFashion></MetaVerseFashion>
-        <HumanEquipment></HumanEquipment>
-      </section>
-    </div>
+          <LandNFT></LandNFT>
+          <MetaVerseFashion></MetaVerseFashion>
+          <HumanEquipment></HumanEquipment>
+        </section>
+      </div>
+    </Element>
   );
 }
 
