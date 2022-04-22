@@ -74,9 +74,9 @@ function Tokenomic(props) {
             <div className="col-12">
               <div className="section_body">
                 <div className="tokenomic_wrapper">
-                  <div className="head text-center">
+                  <div className="head text-center my-5 my-md-0 py-4 py-md-0">
                     <div className="row justify-content-center text-center">
-                      <div className="col-7">
+                      <div className="col-sm-7">
                         <h4 className="text_secondary font_4 font-weight-bold">
                           $MOO Coin
                         </h4>
@@ -89,9 +89,9 @@ function Tokenomic(props) {
                     </div>
                   </div>
                   <div className="body">
-                    <div className="d-flex justify-content-between tokenomic_flex_wrapper">
+                    <div className="d-md-flex justify-content-between tokenomic_flex_wrapper">
                       <div className="tokenomic_flex_box">
-                        <ul className="list-unstyled tokenomic_list">
+                        <ul className="list-unstyled tokenomic_list justify-content-center d-flex d-md-block">
                           {tokenomic_list_object_1.map((v) => {
                             return (
                               <li key={v.id}>
@@ -101,16 +101,16 @@ function Tokenomic(props) {
                           })}
                         </ul>
                       </div>
-                      <div className="tokenomic_flex_box text-center pt-5 flex-grow-1">
+                      <div className="tokenomic_flex_box text-center pt-3 pt-lg-5 flex-grow-1">
                         <img
-                          className="d-inline-block  mt-5 "
+                          className="d-inline-block  mt-3 mt-lg-5 tokenomic_middle_img"
                           src={require("../../Static/img/moo-coin.a494335.png")}
                           alt="img"
                           style={{ width: "80%" }}
                         />
                       </div>
                       <div className="tokenomic_flex_box">
-                        <ul className="list-unstyled tokenomic_list">
+                        <ul className="list-unstyled tokenomic_list justify-content-center d-flex d-md-block">
                           {tokenomic_list_object_2.map((v) => {
                             return (
                               <li key={v.id}>

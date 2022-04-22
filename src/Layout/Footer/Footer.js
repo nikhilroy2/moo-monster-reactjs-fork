@@ -88,11 +88,11 @@ function Footer(props) {
   ];
   return (
     <footer id="Footer">
-      <div className="footer_top_content">
+      <div className="footer_top_content px-3 px-md-0">
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
-              <div className="d-flex align-items-center">
+            <div className="col-md-6 mb-3">
+              <div className="d-flex align-items-center flex-wrap flex-sm-nowrap">
                 <img
                   className="w-25 footer_logo"
                   src={require("../../Static/img/logo.d169cc1.png")}
@@ -105,10 +105,10 @@ function Footer(props) {
                 </p>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 mb-3">
               <div className="col_wrapper">
                 <div className="row">
-                  <div className="col-4">
+                  <div className="col-sm-4 mb-3">
                     <div className="col_wrapper">
                       <ul className="list-unstyled">
                         {footer_nav_list1.map((v) => {
@@ -123,7 +123,7 @@ function Footer(props) {
                       </ul>
                     </div>
                   </div>
-                  <div className="col-4">
+                  <div className="col-sm-4 mb-3">
                     <div className="col_wrapper">
                       <ul className="list-unstyled">
                         {footer_nav_list2.map((v) => {
@@ -163,7 +163,7 @@ function Footer(props) {
                       </ul>
                     </div>
                   </div>
-                  <div className="col-4">
+                  <div className="col-sm-4 mb-3">
                     <div className="col_wrapper">
                       <ul className="list-unstyled social_list">
                         <li>

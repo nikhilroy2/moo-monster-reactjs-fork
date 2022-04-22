@@ -74,9 +74,22 @@ section .title_secondary {
   font-weight: 700;
 }
 
+@media (max-width: 600px) {
+  section .title_secondary {
+    font-size: 3rem;
+  }
+}
+
 section .section_body {
   padding-top: 3rem;
   padding-bottom: 7rem;
+}
+
+@media (max-width: 600px) {
+  section .section_body {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
 }
 
 .btn_secondary {

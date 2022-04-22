@@ -73,10 +73,17 @@ section {
     color: var(--text-7a);
     font-size: 4rem;
     font-weight: 700;
+    @media (max-width: 600px) {
+      font-size: 3rem;
+    }
   }
   .section_body {
     padding-top: 3rem;
     padding-bottom: 7rem;
+    @media (max-width: 600px) {
+      padding-top: 1rem;
+      padding-bottom: 3rem;
+    }
   }
 }
 // ...................Section Styles .................End

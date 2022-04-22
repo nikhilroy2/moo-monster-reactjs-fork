@@ -11,14 +11,51 @@
   background: url("../../Static/img/empty-partner.a9ce52d.png") center/100% 100% no-repeat;
 }
 
+@media (max-width: 600px) {
+  #AboutUs #Developer .dev_img {
+    max-width: 20rem;
+    max-height: 7rem;
+    width: 100%;
+    margin: auto;
+  }
+}
+
 #AboutUs #PartnerAndInvestor .partner_img_list {
   max-width: 11em;
   max-height: 5em;
 }
 
+@media (max-width: 767px) {
+  #AboutUs #PartnerAndInvestor .partner_img_list {
+    max-width: 8em;
+    max-height: 4em;
+  }
+}
+
+@media (max-width: 600px) {
+  #AboutUs #PartnerAndInvestor .partner_img_list {
+    max-width: 5em;
+    max-height: 3em;
+  }
+}
+
 #AboutUs #PartnerAndInvestor .partner_img_list.top_partner {
   max-width: 15em;
   max-height: 8em;
+}
+
+@media (max-width: 767px) {
+  #AboutUs #PartnerAndInvestor .partner_img_list.top_partner {
+    max-width: 10em;
+    max-height: 5em;
+  }
+}
+
+@media (max-width: 600px) {
+  #AboutUs #PartnerAndInvestor .partner_img_list.top_partner {
+    max-width: 7em;
+    max-height: 3em;
+  }
 }
 
 #AboutUs #PartnerAndInvestor .partner_img_list img {
@@ -30,5 +67,22 @@
 #AboutUs #Advisors {
   padding-top: 10rem;
   padding-bottom: 15rem;
+}
+
+@media (max-width: 767px) {
+  #AboutUs #Advisors {
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+  }
+}
+
+#AboutUs #Advisors .advisor_img {
+  width: 200px;
+}
+
+@media (max-width: 600px) {
+  #AboutUs #Advisors .advisor_img {
+    width: 130px;
+  }
 }
 /*# sourceMappingURL=AboutUs.css.map */

@@ -46,14 +46,14 @@ const Developer = () => {
             <div className="col-12">
               <h2 className="title_secondary mb-5">Developed By</h2>
               <div className="section_body">
-                <div className="d-flex justify-content-center">
+                <div className="d-md-flex text-center justify-content-center flex-wrap flex-md-nowrap">
                   <img
-                    className="d-block dev_img me-4"
+                    className="d-block w-100 dev_img me-md-4 mb-4 mb-md-0"
                     src={require("../../Static/img/astra.5aa2b33.png")}
                     alt="img"
                   />
                   <img
-                    className="d-block dev_img"
+                    className="d-block w-100 dev_img"
                     src={require("../../Static/img/paiduay.4281707.png")}
                     alt="img"
                   />
@@ -337,7 +337,7 @@ const Advisors = () => {
                 <div className="col-md-4 col-lg-3 mb-4" key={v.id}>
                   <div className="row justify-content-center">
                     <div className="d-flex text-center d-md-block col">
-                      <img style={{ width: "200px" }} src={v.img} alt="" />
+                      <img className="advisor_img" src={v.img} alt="" />
 
                       <div className="mt-4 w-100 d-flex flex-column justify-content-center align-items-center mb-3 mb-md-0">
                         <p className="font-weight-bold text_secondary my-3 text-center">
