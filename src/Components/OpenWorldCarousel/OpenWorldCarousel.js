@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
@@ -39,10 +40,14 @@ export default OpenWorldCarousel;
 
 const SwiperSlideCarousel = () => {
   const [slideIndex, setSlideIndex] = useState(0);
-  console.log(slideIndex);
+  //console.log(slideIndex);
   return (
     <>
       <Swiper
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         slidesPerView={1}
         spaceBetween={30}
         loop={true}
@@ -51,7 +56,7 @@ const SwiperSlideCarousel = () => {
         }}
         onSlideChange={(e) => setSlideIndex(e.realIndex)}
         navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Autoplay, Pagination, Navigation]}
         className={
           slideIndex === 0
             ? "start_point_swiper"

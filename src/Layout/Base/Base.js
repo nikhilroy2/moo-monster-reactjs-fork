@@ -4,6 +4,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
 import PageOpenModal from "../../Components/PageOpenModal/PageOpenModal";
+import BuyMooModal from "../../Components/BuyMooModal/BuyMooModal";
 function Base(props) {
   return (
     <div id="Base">
@@ -21,7 +22,9 @@ function Base(props) {
       <main>{props.children}</main>
       <Footer></Footer>
 
+      {/* modal here */}
       <PageOpenModal></PageOpenModal>
+      <BuyMooModal></BuyMooModal>
     </div>
   );
 }

@@ -122,7 +122,11 @@ function Home(props) {
                   </div>
                   <div className="box_body pt-5">
                     <div className="box_control">
-                      <button className="me-4">
+                      <button
+                        className="me-4"
+                        data-mdb-target="#buy_moo_open_modal"
+                        data-mdb-toggle="modal"
+                      >
                         {" "}
                         <img
                           className="me-3"
